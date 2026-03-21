@@ -3,12 +3,14 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Mobile nav toggle
-    const navToggle = document.getElementById('navToggle');
-    const navList = document.getElementById('navList');
+    var navToggle = document.getElementById('navToggle');
+    var navList = document.getElementById('navList');
 
     if (navToggle) {
         navToggle.addEventListener('click', function () {
             navList.classList.toggle('active');
+            var isOpen = navList.classList.contains('active');
+            navToggle.setAttribute('aria-expanded', isOpen);
         });
     }
 
@@ -16,15 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.nav-list a').forEach(function (link) {
         link.addEventListener('click', function () {
             navList.classList.remove('active');
+            if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
     // FAQ Accordion
     document.querySelectorAll('.faq-question').forEach(function (btn) {
         btn.addEventListener('click', function () {
-            const item = this.closest('.faq-item');
-            const answer = item.querySelector('.faq-answer');
-            const isActive = item.classList.contains('active');
+            var item = this.closest('.faq-item');
+            var answer = item.querySelector('.faq-answer');
+            var isActive = item.classList.contains('active');
 
             // Close all
             document.querySelectorAll('.faq-item').forEach(function (faq) {
@@ -42,103 +45,121 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Header shadow on scroll
-    const header = document.querySelector('.header');
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 10) {
-            header.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+    // Header scroll effect
+    var header = document.getElementById('header');
+    var lastScrollY = 0;
+
+    function handleHeaderScroll() {
+        var scrollY = window.scrollY;
+        if (scrollY > 10) {
+            header.classList.add('scrolled');
         } else {
-            header.style.boxShadow = 'none';
+            header.classList.remove('scrolled');
         }
-    });
+        lastScrollY = scrollY;
+    }
+
+    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
-            const target = document.querySelector(this.getAttribute('href'));
+            var href = this.getAttribute('href');
+            if (href === '#') return;
+            var target = document.querySelector(href);
             if (target) {
                 e.preventDefault();
-                const offset = 80;
-                const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                var offset = 80;
+                var top = target.getBoundingClientRect().top + window.pageYOffset - offset;
                 window.scrollTo({ top: top, behavior: 'smooth' });
             }
         });
     });
 
-    // Form submission
-    const form = document.getElementById('contactForm');
+    // Scroll Reveal Animation
+    var reveals = document.querySelectorAll('.reveal');
+    if (reveals.length > 0) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        reveals.forEach(function (el) {
+            revealObserver.observe(el);
+        });
+    }
+
+    // Mobile Sticky CTA
+    var mobileCta = document.getElementById('mobileCta');
+    var heroSection = document.querySelector('.hero');
+    var formSection = document.getElementById('formulario');
+
+    if (mobileCta && heroSection) {
+        var stickyObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                // Show sticky CTA when hero is not visible
+                if (!entry.isIntersecting) {
+                    // Check if form is visible
+                    var formRect = formSection ? formSection.getBoundingClientRect() : null;
+                    var formVisible = formRect && formRect.top < window.innerHeight && formRect.bottom > 0;
+                    if (!formVisible) {
+                        mobileCta.classList.add('visible');
+                    } else {
+                        mobileCta.classList.remove('visible');
+                    }
+                } else {
+                    mobileCta.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0 });
+
+        stickyObserver.observe(heroSection);
+
+        // Also hide when form is in view
+        if (formSection) {
+            var formObserver = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        mobileCta.classList.remove('visible');
+                    } else if (!heroSection.getBoundingClientRect().bottom > 0) {
+                        mobileCta.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            formObserver.observe(formSection);
+        }
+    }
+
+    // Form submission with loading state
+    var form = document.getElementById('contactForm');
     if (form) {
         form.addEventListener('submit', function (e) {
             e.preventDefault();
-            const btn = form.querySelector('button[type="submit"]');
-            const originalText = btn.textContent;
-            btn.textContent = 'Enviando...';
+            var btn = form.querySelector('button[type="submit"]');
+            var originalHTML = btn.innerHTML;
+            btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="animation:spin 1s linear infinite"><circle cx="12" cy="12" r="10" stroke-dasharray="30 60"/></svg> Enviando...';
             btn.disabled = true;
+            btn.style.opacity = '0.7';
 
             // Simulate submission (replace with real endpoint)
             setTimeout(function () {
-                btn.textContent = 'Solicitud enviada';
-                btn.style.background = '#188bf6';
-                form.reset();
-                setTimeout(function () {
-                    btn.textContent = originalText;
-                    btn.style.background = '';
-                    btn.disabled = false;
-                }, 3000);
-            }, 1500);
+                btn.innerHTML = originalHTML;
+                btn.disabled = false;
+                btn.style.opacity = '';
+            }, 2000);
         });
     }
 
-    // Animate numbers on scroll
-    const observerOptions = { threshold: 0.5 };
-    const numberObserver = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-                entry.target.querySelectorAll('.number-value').forEach(function (el) {
-                    animateNumber(el);
-                });
-                numberObserver.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    const numbersSection = document.querySelector('.numbers-grid');
-    if (numbersSection) {
-        numberObserver.observe(numbersSection);
-    }
-
-    function animateNumber(el) {
-        const text = el.textContent;
-        const match = text.match(/([+]?)(\d[\d.]*)(.*)/);
-        if (!match) return;
-
-        const prefix = match[1];
-        const numStr = match[2];
-        const suffix = match[3];
-        const target = parseFloat(numStr.replace('.', ''));
-        const hasDecimal = numStr.includes('.');
-        const duration = 1500;
-        const start = performance.now();
-
-        function update(now) {
-            const elapsed = now - start;
-            const progress = Math.min(elapsed / duration, 1);
-            const eased = 1 - Math.pow(1 - progress, 3);
-            let current = Math.floor(target * eased);
-
-            if (hasDecimal) {
-                current = current.toLocaleString('es-ES');
-            }
-
-            el.textContent = prefix + current + suffix;
-
-            if (progress < 1) {
-                requestAnimationFrame(update);
-            } else {
-                el.textContent = text;
-            }
-        }
-
-        requestAnimationFrame(update);
-    }
+    // Add spin animation dynamically
+    var style = document.createElement('style');
+    style.textContent = '@keyframes spin{to{transform:rotate(360deg)}}';
+    document.head.appendChild(style);
 });
