@@ -6,19 +6,17 @@
 .hero-bullets {
     list-style: none;
     margin-bottom: 40px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     gap: 16px;
-    text-align: center;
-    width: 100%;
+    text-align: left;
 }
 
 .hero-bullets li {
     font-size: 1.05rem;
     color: var(--text);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    align-items: flex-start;
     gap: 12px;
     line-height: 1.5;
 }
