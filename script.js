@@ -138,26 +138,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Form submission with loading state
-    var form = document.getElementById('contactForm');
-    if (form) {
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            var btn = form.querySelector('button[type="submit"]');
-            var originalHTML = btn.innerHTML;
-            btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="animation:spin 1s linear infinite"><circle cx="12" cy="12" r="10" stroke-dasharray="30 60"/></svg> Enviando...';
-            btn.disabled = true;
-            btn.style.opacity = '0.7';
-
-            // Simulate submission (replace with real endpoint)
-            setTimeout(function () {
-                btn.innerHTML = originalHTML;
-                btn.disabled = false;
-                btn.style.opacity = '';
-            }, 2000);
-        });
-    }
-
     // Add spin animation dynamically
     var style = document.createElement('style');
     style.textContent = '@keyframes spin{to{transform:rotate(360deg)}}';
