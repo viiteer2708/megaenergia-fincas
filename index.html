@@ -397,9 +397,6 @@
                             </select>
                         </div>
                         <input type="hidden" name="utm_source" id="utm_source" value="">
-                        <input type="hidden" name="_subject" value="Nueva solicitud AAFF - admins.megaenergia.es">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                         <div class="form-group form-check">
                             <input type="checkbox" id="privacidad" name="privacidad" required>
                             <label for="privacidad">Acepto la <a href="#">política de privacidad</a> y el tratamiento de mis datos.</label>
@@ -518,13 +515,19 @@
 
             var formData = new FormData(form);
 
-            fetch('https://formsubmit.co/ajax/victormarron@megaenergia.es', {
+            var data = {};
+            formData.forEach(function (value, key) { data[key] = value; });
+
+            fetch('https://hook.eu2.make.com/br3u5wdc8ok66lksudd608bg9kswmcgc', {
                 method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
+                body: JSON.stringify(data),
+                headers: { 'Content-Type': 'application/json' }
             })
-            .then(function (response) { return response.json(); })
-            .then(function (data) {
+            .then(function (response) {
+                if (!response.ok) throw new Error('Error');
+                return response.text();
+            })
+            .then(function () {
                 form.style.display = 'none';
                 thankYou.style.display = 'flex';
                 thankYou.scrollIntoView({ behavior: 'smooth', block: 'center' });
