@@ -6,10 +6,12 @@
 .hero-bullets {
     list-style: none;
     margin-bottom: 40px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 16px;
     text-align: left;
+    width: 100%;
+    max-width: 580px;
 }
 
 .hero-bullets li {
