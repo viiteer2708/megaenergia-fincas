@@ -319,10 +319,16 @@ img {
 }
 
 .hero-subtitle {
-    font-size: 1.15rem;
-    color: var(--text-light);
     margin-bottom: 32px;
     max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-subtitle p {
+    font-size: 1.15rem;
+    color: var(--text-light);
     line-height: 1.7;
 }
 
