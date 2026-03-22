@@ -293,14 +293,25 @@ img {
     margin-bottom: 24px;
 }
 
+.hero-pre-headline {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 12px;
+    max-width: 600px;
+}
+
 .hero h1 {
     font-family: var(--font-heading);
-    font-size: 3.2rem;
+    font-size: 3.8rem;
     font-weight: 800;
-    line-height: 1.1;
+    line-height: 1.05;
     color: var(--dark);
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 .highlight-green {
@@ -776,8 +787,12 @@ img {
    RESPONSIVE
    ================== */
 @media (max-width: 960px) {
+    .hero-pre-headline {
+        font-size: 1.15rem;
+    }
+
     .hero h1 {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
     .cards-grid {
@@ -842,8 +857,12 @@ img {
         padding-top: 100px;
     }
 
+    .hero-pre-headline {
+        font-size: 1.05rem;
+    }
+
     .hero h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
     }
 
     .hero-subtitle {
