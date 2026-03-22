@@ -290,17 +290,17 @@ img {
     background: var(--primary-light);
     border: 2px solid var(--primary);
     padding: 8px 20px;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 }
 
 .hero-pre-headline {
     font-family: var(--font-heading);
     font-size: 1.35rem;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.5;
     color: var(--text);
-    margin-bottom: 12px;
-    max-width: 600px;
+    margin-bottom: 16px;
+    max-width: 620px;
 }
 
 .hero h1 {
@@ -309,7 +309,7 @@ img {
     font-weight: 800;
     line-height: 1.05;
     color: var(--dark);
-    margin-bottom: 24px;
+    margin-bottom: 32px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
@@ -319,23 +319,23 @@ img {
 }
 
 .hero-subtitle {
-    margin-bottom: 32px;
+    margin-bottom: 40px;
     max-width: 640px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 20px;
 }
 
 .hero-subtitle p {
     font-size: 1.15rem;
     color: var(--text-light);
-    line-height: 1.7;
+    line-height: 1.8;
 }
 
 .hero-ctas {
     display: flex;
     gap: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -384,7 +384,7 @@ img {
    SECTIONS
    ================== */
 .section {
-    padding: 88px 0;
+    padding: 100px 0;
 }
 
 .section-light {
@@ -402,15 +402,15 @@ img {
 
 .section-header {
     text-align: center;
-    margin-bottom: 56px;
+    margin-bottom: 64px;
 }
 
 .section-header h2 {
     font-family: var(--font-heading);
     font-size: 2.4rem;
     font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 16px;
+    line-height: 1.25;
+    margin-bottom: 20px;
     color: var(--dark);
     letter-spacing: -0.01em;
 }
@@ -440,14 +440,14 @@ img {
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 28px;
 }
 
 .card {
     background: var(--white);
     border: var(--border);
     box-shadow: var(--shadow);
-    padding: 36px 32px;
+    padding: 40px 36px;
     transition: var(--transition);
     cursor: default;
 }
@@ -483,7 +483,11 @@ img {
 .card p {
     font-size: 0.95rem;
     color: var(--text-light);
-    line-height: 1.7;
+    line-height: 1.75;
+}
+
+.card h3 + p {
+    margin-top: 4px;
 }
 
 /* ==================
@@ -568,7 +572,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 24px;
+    padding: 22px 28px;
     background: var(--white);
     border: none;
     cursor: pointer;
@@ -611,10 +615,10 @@ img {
 }
 
 .faq-answer p {
-    padding: 20px 24px;
+    padding: 20px 28px 24px;
     font-size: 0.95rem;
     color: var(--text-light);
-    line-height: 1.7;
+    line-height: 1.8;
     background: var(--white);
 }
 
@@ -623,7 +627,7 @@ img {
    ================== */
 .section-cta {
     background: var(--cream);
-    padding: 88px 0;
+    padding: 100px 0;
     border-top: var(--border);
 }
 
