@@ -295,12 +295,14 @@ img {
 
 .hero-pre-headline {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 700;
     line-height: 1.5;
     color: var(--text);
     margin-bottom: 12px;
     max-width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .hero h1 {
