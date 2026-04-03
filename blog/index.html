@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Mega Energía - Gestión energética para administradores de fincas</title>
+    <meta name="description" content="Artículos, guías y consejos sobre gestión energética para administradores de fincas. Optimización, ahorro y gestión de comunidades.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mega: {
+                            navy: '#1A1A2E',
+                            navyLight: '#2A2A4A',
+                            amber: '#F8AD16',
+                            amberHover: '#E09A10',
+                            teal: '#30B7BB',
+                            tealLight: '#E5F6F6',
+                            surface: '#F8FAFC',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+</head>
+<body class="font-sans text-slate-600 bg-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky w-full top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-mega-border/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="../index.html" class="flex items-center gap-2">
+                <img src="../images/logo_megaenergia.png" alt="Mega Energía" class="h-10 w-auto">
+            </a>
+            <div class="flex items-center gap-6">
+                <a href="../index.html" class="text-slate-500 hover:text-mega-navy transition-colors font-medium">Inicio</a>
+                <a href="../index.html#contacto" class="px-5 py-2 rounded-lg font-display font-semibold text-white bg-mega-navy hover:bg-mega-navyLight transition-colors text-sm">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-mega-surface py-16 border-b border-mega-border">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <span class="text-mega-teal font-bold tracking-widest uppercase text-sm mb-2 block">Blog</span>
+            <h1 class="font-display font-bold text-4xl lg:text-5xl text-mega-navy mb-4">Gestión energética para administradores de fincas</h1>
+            <p class="text-lg text-slate-500 max-w-2xl mx-auto">Artículos, guías y consejos prácticos para simplificar la gestión de luz y gas en tus comunidades</p>
+        </div>
+    </header>
+
+    <!-- Articles Grid -->
+    <main class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Article 10 - Most recent -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="autoconsumo-colectivo-comunidades-guia-administrador.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-mega-teal/20 to-mega-tealLight flex items-center justify-center">
+                        <i class="ph-fill ph-solar-panel text-6xl text-mega-teal/60"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-mega-tealLight text-mega-teal text-xs font-bold rounded-full">Autoconsumo</span>
+                            <time datetime="2026-04-02" class="text-slate-400 text-sm">2 abr 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Autoconsumo colectivo en comunidades: lo que el administrador necesita saber</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Regulación, subvenciones, viabilidad y el papel del administrador en la transición energética de las comunidades.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="merece-la-pena-cambiar-comercializadora-lo-que-ningun-aaff-te-cuenta.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-mega-amber/20 to-amber-50 flex items-center justify-center">
+                        <i class="ph-fill ph-swap text-6xl text-mega-amber/60"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-amber-50 text-mega-amber text-xs font-bold rounded-full">Opinión</span>
+                            <time datetime="2026-03-29" class="text-slate-400 text-sm">29 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">¿Merece la pena cambiar de comercializadora? Lo que ningún AAFF te cuenta</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Una visión honesta sobre cuándo tiene sentido cambiar y cuándo no, más allá del precio.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="senales-contratos-energeticos-comunidades-necesitan-revision.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-red-100 to-red-50 flex items-center justify-center">
+                        <i class="ph-fill ph-warning text-6xl text-red-400/60"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-red-50 text-red-500 text-xs font-bold rounded-full">Diagnóstico</span>
+                            <time datetime="2026-03-26" class="text-slate-400 text-sm">26 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">5 señales de que los contratos energéticos de tus comunidades necesitan una revisión</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Autodiagnóstico rápido para saber si estás dejando pasar oportunidades de mejora.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 7 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="energia-reactiva-comunidades-penalizacion.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-mega-navy/10 to-slate-100 flex items-center justify-center">
+                        <i class="ph-fill ph-lightning text-6xl text-mega-navy/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-slate-100 text-mega-navy text-xs font-bold rounded-full">Técnico</span>
+                            <time datetime="2026-03-22" class="text-slate-400 text-sm">22 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Energía reactiva en comunidades: la penalización que nadie revisa</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Qué es, cómo detectarla en tus facturas y cuánto puede estar costando a tus comunidades.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="delegar-gestion-energetica-sin-perder-control.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-mega-teal/10 to-mega-tealLight flex items-center justify-center">
+                        <i class="ph-fill ph-handshake text-6xl text-mega-teal/50"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-mega-tealLight text-mega-teal text-xs font-bold rounded-full">Gestión</span>
+                            <time datetime="2026-03-19" class="text-slate-400 text-sm">19 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Delegar la gestión energética sin perder el control: guía para AAFF</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Por qué delegar bien significa más control, no menos. Y cómo hacerlo sin riesgos.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="cambios-titular-comunidades-como-evitar-retrasos.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center">
+                        <i class="ph-fill ph-files text-6xl text-purple-400/60"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-purple-50 text-purple-500 text-xs font-bold rounded-full">Trámites</span>
+                            <time datetime="2026-03-15" class="text-slate-400 text-sm">15 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Cambios de titular en comunidades: por qué se eternizan y cómo evitarlo</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">El trámite invisible que te roba horas y cómo gestionarlo de forma eficiente.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="que-responder-presidente-ahorrar-energia.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-mega-amber/10 to-amber-50 flex items-center justify-center">
+                        <i class="ph-fill ph-users-three text-6xl text-mega-amber/50"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-amber-50 text-mega-amber text-xs font-bold rounded-full">Práctico</span>
+                            <time datetime="2026-03-12" class="text-slate-400 text-sm">12 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Qué responder cuando el presidente pregunta si se puede ahorrar en energía</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Frases, datos y estrategias para responder con seguridad en la próxima junta.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="administrador-fincas-tiempo-perdido-energia.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-slate-200 to-slate-100 flex items-center justify-center">
+                        <i class="ph-fill ph-hourglass-medium text-6xl text-slate-400/60"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-full">Reflexión</span>
+                            <time datetime="2026-03-08" class="text-slate-400 text-sm">8 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Por qué el administrador de fincas pierde más tiempo en energía del que cree</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">La carga invisible de gestionar luz y gas en decenas de comunidades.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="guia-optimizar-suministros-energeticos-comunidades.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center">
+                        <i class="ph-fill ph-book-open-text text-6xl text-green-500/50"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-green-50 text-green-600 text-xs font-bold rounded-full">Guía</span>
+                            <time datetime="2026-03-05" class="text-slate-400 text-sm">5 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Guía: cómo optimizar los suministros energéticos de tus comunidades sin complicarte</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Paso a paso para revisar contratos, tarifas y potencias sin perder tiempo.</p>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Article 1 - Oldest -->
+            <article class="bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden group hover:shadow-md transition-shadow">
+                <a href="mitos-cambiar-comercializadora-comunidades.html" class="block">
+                    <div class="h-48 bg-gradient-to-br from-mega-navy/10 to-mega-navy/5 flex items-center justify-center">
+                        <i class="ph-fill ph-chat-circle-dots text-6xl text-mega-navy/40"></i>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="px-3 py-1 bg-mega-navy/10 text-mega-navy text-xs font-bold rounded-full">Mitos</span>
+                            <time datetime="2026-03-01" class="text-slate-400 text-sm">1 mar 2026</time>
+                        </div>
+                        <h2 class="font-display font-bold text-lg text-mega-navy mb-2 group-hover:text-mega-teal transition-colors leading-snug">Cambiar de comercializadora en comunidades: 10 mitos que frenan a los administradores</h2>
+                        <p class="text-slate-500 text-sm line-clamp-2">Desmontamos las creencias más comunes que paralizan la decisión de optimizar.</p>
+                    </div>
+                </a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- CTA Banner -->
+    <section class="py-16 bg-mega-navy">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="font-display font-bold text-3xl text-white mb-4">¿Quieres que revisemos los suministros de tus comunidades?</h2>
+            <p class="text-slate-300 mb-8">Sin compromiso, sin coste, sin cambios si no lo ves claro.</p>
+            <a href="../index.html#contacto" class="inline-flex items-center justify-center px-8 py-4 rounded-xl font-display font-semibold text-white bg-mega-amber hover:bg-mega-amberHover transition-all duration-300 shadow-lg shadow-mega-amber/30 hover:shadow-mega-amber/50 hover:-translate-y-1">
+                Solicitar revisión gratuita
+                <i class="ph ph-arrow-right ml-2 text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#121221] py-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm">&copy; 2026 Mega Energía. Todos los derechos reservados.</p>
+                <div class="flex gap-6 text-sm text-slate-500">
+                    <a href="../aviso-legal.html" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="../politica-de-privacidad.html" class="hover:text-white transition-colors">Política de Privacidad</a>
+                    <a href="../politica-de-cookies.html" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

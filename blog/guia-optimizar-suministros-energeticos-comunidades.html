@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía: cómo optimizar los suministros energéticos de tus comunidades sin complicarte | Mega Energía</title>
+    <meta name="description" content="Guía práctica para administradores de fincas: cómo revisar, optimizar y controlar los suministros energéticos de tus comunidades paso a paso.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mega: {
+                            navy: '#1A1A2E',
+                            navyLight: '#2A2A4A',
+                            amber: '#F8AD16',
+                            amberHover: '#E09A10',
+                            teal: '#30B7BB',
+                            tealLight: '#E5F6F6',
+                            surface: '#F8FAFC',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .article-body h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; color: #1A1A2E; margin-top: 2.5rem; margin-bottom: 1rem; line-height: 1.3; }
+        .article-body h3 { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 1.15rem; color: #1A1A2E; margin-top: 1.75rem; margin-bottom: 0.5rem; }
+        .article-body p { margin-bottom: 1.25rem; line-height: 1.8; color: #334155; }
+        .article-body ul, .article-body ol { margin-bottom: 1.25rem; padding-left: 1.5rem; color: #334155; }
+        .article-body li { margin-bottom: 0.5rem; line-height: 1.7; }
+        .article-body strong { color: #1A1A2E; }
+        .step-block { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .step-number { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: 50%; background: #30B7BB; color: white; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.85rem; margin-right: 0.75rem; flex-shrink: 0; }
+        .red-flag { border-left: 4px solid #EF4444; background: #FEF2F2; padding: 1rem 1.25rem; border-radius: 0 0.75rem 0.75rem 0; margin-bottom: 1rem; }
+        .dream-block { border-left: 4px solid #F8AD16; background: #FFFBEB; padding: 1.25rem 1.5rem; border-radius: 0 0.75rem 0.75rem 0; margin-bottom: 2rem; }
+    </style>
+</head>
+<body class="bg-white font-sans text-slate-700 antialiased">
+
+    <!-- Nav -->
+    <nav class="bg-white border-b border-mega-border sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="../index.html">
+                <img src="../images/logo_megaenergia.png" alt="Mega Energía" class="h-8 w-auto">
+            </a>
+            <a href="index.html" class="text-sm font-medium text-mega-navy hover:text-mega-teal transition-colors flex items-center gap-1">
+                <i class="ph ph-arrow-left text-lg"></i> Volver al blog
+            </a>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <article class="max-w-3xl mx-auto px-6 py-16">
+        <!-- Header -->
+        <header class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="bg-mega-tealLight text-mega-teal text-xs font-bold font-display px-3 py-1 rounded-full">Guía práctica</span>
+                <time datetime="2026-03-05" class="text-sm text-slate-400">5 de marzo de 2026</time>
+            </div>
+            <h1 class="font-display font-extrabold text-3xl lg:text-4xl text-mega-navy leading-tight tracking-tight mb-6">Guía: cómo optimizar los suministros energéticos de tus comunidades sin complicarte</h1>
+            <p class="text-lg text-slate-500 leading-relaxed">Todo lo que necesitas saber para revisar, ajustar y controlar la energía de tus comunidades. Paso a paso, sin tecnicismos innecesarios y con un enfoque realista.</p>
+        </header>
+
+        <!-- Body -->
+        <div class="article-body">
+            <p>Si administras comunidades de propietarios, la gestión energética es una de esas tareas que está siempre ahí, pero que rara vez recibe la atención que merece. No porque no sea importante, sino porque siempre hay algo más urgente: una avería, una reclamación, una junta que preparar.</p>
+
+            <p>El problema es que la energía que no se revisa se convierte en un coste silencioso. Potencias sobredimensionadas, tarifas que ya no son competitivas, contratos que se renovaron automáticamente hace años. Todo eso suma. Y cuando alguien pregunta en junta si se puede ahorrar, la respuesta debería ser clara.</p>
+
+            <p>Esta guía está pensada para que puedas abordar la optimización energética de tus comunidades de forma ordenada, sin necesidad de convertirte en un experto en energía.</p>
+
+            <h2>Qué revisar: los cuatro pilares de un suministro optimizado</h2>
+
+            <h3>1. Los contratos vigentes</h3>
+            <p>El primer paso siempre es saber qué tienes. Parece obvio, pero es sorprendente la cantidad de comunidades que mantienen contratos que nunca se han revisado desde que se firmaron. Lo que hay que mirar:</p>
+            <ul>
+                <li><strong>Comercializadora actual</strong> y condiciones del contrato</li>
+                <li><strong>Permanencia:</strong> si existe, cuándo vence</li>
+                <li><strong>Tipo de tarifa</strong> contratada (fija, indexada, regulada)</li>
+                <li><strong>Fecha de última revisión</strong> o renovación</li>
+            </ul>
+
+            <h3>2. Las potencias contratadas</h3>
+            <p>Una potencia mal dimensionada es uno de los errores más comunes y más costosos. Si la potencia es demasiado alta, estás pagando un fijo innecesario cada mes. Si es demasiado baja, los excesos de potencia disparan la factura. La clave está en ajustarla al consumo real del edificio, teniendo en cuenta ascensores, zonas comunes, garajes y otros elementos.</p>
+
+            <h3>3. Las tarifas y sus tramos horarios</h3>
+            <p>Desde la entrada de la tarifa 3.0TD para comunidades, los tramos horarios importan más que nunca. Hay seis periodos distintos con precios diferentes. Pequeños ajustes en los horarios de funcionamiento de sistemas como la iluminación de zonas comunes o la ventilación de garajes pueden generar ahorros significativos sin inversión alguna.</p>
+
+            <h3>4. La facturación</h3>
+            <p>Revisar las facturas no es solo mirar el total. Es asegurarse de que los conceptos cobrados coinciden con lo contratado, que no hay cargos inesperados y que los consumos son coherentes con el uso real del edificio. Una factura que sube sin explicación es una señal de alarma.</p>
+
+            <h2>Cuándo revisar: los momentos clave</h2>
+            <p>No es necesario estar revisando suministros constantemente. Pero hay momentos en los que una revisión es especialmente valiosa:</p>
+            <ul>
+                <li><strong>Al asumir una nueva comunidad:</strong> es el mejor momento para poner orden desde el principio</li>
+                <li><strong>Antes de cada junta ordinaria:</strong> para poder presentar datos actualizados</li>
+                <li><strong>Cuando vence un contrato</strong> o una permanencia</li>
+                <li><strong>Cuando se detecta una subida inusual</strong> en las facturas</li>
+                <li><strong>Tras una reforma</strong> o cambio en las instalaciones del edificio</li>
+            </ul>
+
+            <h2>Señales de alarma: red flags que no debes ignorar</h2>
+
+            <div class="red-flag">
+                <p class="mb-0" style="margin-bottom:0"><i class="ph ph-warning text-red-500 mr-2"></i><strong>Facturas que suben sin que haya cambiado el consumo.</strong> Puede indicar una revisión de precios no comunicada o un cambio en las condiciones del contrato.</p>
+            </div>
+            <div class="red-flag">
+                <p class="mb-0" style="margin-bottom:0"><i class="ph ph-warning text-red-500 mr-2"></i><strong>Penalizaciones por exceso de potencia recurrentes.</strong> La potencia contratada no se ajusta al consumo real.</p>
+            </div>
+            <div class="red-flag">
+                <p class="mb-0" style="margin-bottom:0"><i class="ph ph-warning text-red-500 mr-2"></i><strong>Imposibilidad de contactar con la comercializadora.</strong> Si no te atienden cuando llamas, imagina cuando tengas una urgencia.</p>
+            </div>
+            <div class="red-flag">
+                <p class="mb-0" style="margin-bottom:0"><i class="ph ph-warning text-red-500 mr-2"></i><strong>Contratos renovados automáticamente sin revisión de condiciones.</strong> La inercia puede estar costando dinero cada mes.</p>
+            </div>
+            <div class="red-flag">
+                <p class="mb-0" style="margin-bottom:0"><i class="ph ph-warning text-red-500 mr-2"></i><strong>No saber exactamente qué tarifa o potencia tiene cada suministro.</strong> Falta de visibilidad es el primer síntoma de un suministro sin optimizar.</p>
+            </div>
+
+            <h2>Cómo abordar la optimización paso a paso</h2>
+
+            <div class="step-block">
+                <div class="flex items-start">
+                    <span class="step-number">1</span>
+                    <div>
+                        <h3 class="mt-0" style="margin-top:0">Recopila la información básica</h3>
+                        <p class="mb-0" style="margin-bottom:0">Reúne las últimas facturas de cada suministro, los datos del contrato (CUPS, comercializadora, potencias) y cualquier comunicación reciente de la comercializadora. No necesitas más para empezar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step-block">
+                <div class="flex items-start">
+                    <span class="step-number">2</span>
+                    <div>
+                        <h3 class="mt-0" style="margin-top:0">Identifica los suministros prioritarios</h3>
+                        <p class="mb-0" style="margin-bottom:0">No todas las comunidades necesitan el mismo nivel de atención. Empieza por las que tienen facturas más altas, más puntos de suministro o las que llevan más tiempo sin revisarse.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step-block">
+                <div class="flex items-start">
+                    <span class="step-number">3</span>
+                    <div>
+                        <h3 class="mt-0" style="margin-top:0">Analiza o delega el análisis</h3>
+                        <p class="mb-0" style="margin-bottom:0">Si tienes los conocimientos, puedes hacer el análisis tú mismo. Si no, o si simplemente no tienes el tiempo, este es el momento de pedir ayuda a un especialista. Una auditoría energética bien hecha te dará un mapa claro de dónde estás y hacia dónde puedes ir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step-block">
+                <div class="flex items-start">
+                    <span class="step-number">4</span>
+                    <div>
+                        <h3 class="mt-0" style="margin-top:0">Implementa los cambios</h3>
+                        <p class="mb-0" style="margin-bottom:0">Los ajustes más habituales son: cambiar de comercializadora, ajustar potencias y revisar tarifas. Son cambios que no requieren obras y que se gestionan en días, no en semanas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step-block">
+                <div class="flex items-start">
+                    <span class="step-number">5</span>
+                    <div>
+                        <h3 class="mt-0" style="margin-top:0">Establece una rutina de seguimiento</h3>
+                        <p class="mb-0" style="margin-bottom:0">La optimización no es un evento puntual. El mercado cambia, los consumos varían y los contratos vencen. Tener un sistema de seguimiento (aunque sea trimestral) te permite mantener todo bajo control sin esfuerzo continuo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>El escenario ideal: todo bajo control</h2>
+
+            <div class="dream-block">
+                <p class="mb-2" style="margin-bottom:0.5rem"><strong>Imagina esta situación:</strong></p>
+                <p class="mb-0" style="margin-bottom:0">Llegas a una junta de propietarios. El presidente pregunta por los gastos de energía. Abres tu informe y muestras: qué se ha consumido, cuánto se ha pagado, qué optimizaciones se han aplicado y cuánto se ha ahorrado respecto al periodo anterior. Tienes respuestas para todo. Nadie cuestiona tu gestión. Sales de la junta con la tranquilidad de que ese frente está cubierto.</p>
+            </div>
+
+            <p>Ese escenario no es una fantasía. Es lo que pasa cuando la gestión energética está profesionalizada. Y no requiere que tú te conviertas en un experto. Solo requiere que cuentes con el apoyo adecuado.</p>
+
+            <h2>Por qué tiene sentido delegar en especialistas</h2>
+            <p>Optimizar la energía de decenas de comunidades no es algo que se pueda hacer bien entre reuniones. No porque no seas capaz, sino porque el tiempo es finito y tu atención ya está repartida entre demasiadas prioridades.</p>
+            <p>Un especialista en gestión energética para comunidades hace en horas lo que a ti te llevaría semanas. No porque sea más inteligente, sino porque se dedica exclusivamente a esto. Conoce las tarifas, los periodos, las condiciones del mercado y los procesos de cambio. Y, lo más importante, te libera de esa carga mental que ocupa espacio aunque no lo notes.</p>
+
+            <p>El primer paso es siempre el más sencillo: una revisión inicial de tus suministros actuales. Sin compromiso, sin cambios obligatorios. Solo información para que puedas decidir con datos.</p>
+        </div>
+    </article>
+
+    <!-- CTA Banner -->
+    <section class="bg-mega-navy py-16">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="font-display font-bold text-2xl lg:text-3xl text-white mb-4">¿Quieres saber qué margen de mejora tienen tus comunidades?</h2>
+            <p class="text-slate-300 mb-8 text-lg">Te hacemos una revisión gratuita de tus suministros. Sin compromiso, sin letra pequeña.</p>
+            <a href="../index.html#contacto" class="inline-flex items-center justify-center px-8 py-4 rounded-xl font-display font-semibold text-white bg-mega-amber hover:bg-mega-amberHover shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+                Solicitar revisión gratuita <i class="ph ph-arrow-right ml-2 text-xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#121221] py-10 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-slate-500 text-sm">&copy; 2026 Mega Energía. Todos los derechos reservados.</p>
+                <div class="flex gap-6 text-sm text-slate-500">
+                    <a href="../aviso-legal.html" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="../politica-de-privacidad.html" class="hover:text-white transition-colors">Política de Privacidad</a>
+                    <a href="../politica-de-cookies.html" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
