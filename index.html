@@ -1048,10 +1048,13 @@
             });
 
             var file = facturaInput && facturaInput.files && facturaInput.files[0];
+            // Always include factura_tamano so Make filter is trivial (>0 = with file, =0 = without)
+            data.factura_tamano = file ? file.size : 0;
+            data.factura_nombre = file ? file.name : '';
+            data.factura_tipo = file ? file.type : '';
+            data.factura_base64 = '';
+
             var filePromise = file ? fileToBase64(file).then(function (base64) {
-                data.factura_nombre = file.name;
-                data.factura_tipo = file.type;
-                data.factura_tamano = file.size;
                 data.factura_base64 = base64;
             }) : Promise.resolve();
 
