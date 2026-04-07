@@ -1,84 +1,133 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Mega Energía</title>
+    <title>Política de Privacidad | Mega Energía Fincas</title>
+    <meta name="description" content="Política de privacidad de Mega Energía. Tratamiento de datos personales, derechos del usuario y legislación aplicable.">
     <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="legal.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mega: {
+                            navy: '#1A1A2E',
+                            navyLight: '#2A2A4A',
+                            amber: '#F8AD16',
+                            teal: '#30B7BB',
+                            tealLight: '#E5F6F6',
+                            surface: '#F8FAFC',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .legal-prose h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; line-height: 1.3; color: #1A1A2E; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
+        .legal-prose h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.15rem; color: #30B7BB; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .legal-prose p { color: #475569; line-height: 1.75; margin-bottom: 1rem; }
+        .legal-prose strong { color: #1A1A2E; font-weight: 700; }
+        .legal-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+        .legal-prose ul li { color: #475569; line-height: 1.75; margin-bottom: 0.5rem; }
+        .legal-prose a { color: #30B7BB; text-decoration: underline; }
+        .legal-prose a:hover { color: #1A1A2E; }
+    </style>
 </head>
-<body>
+<body class="font-sans text-slate-600 bg-white antialiased">
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="/" class="logo">
-                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="logo-img">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-mega-border/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 cursor-pointer">
+                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="h-10 w-auto">
+            </a>
+            <a href="/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-display font-semibold text-white bg-mega-navy hover:bg-mega-navyLight transition-colors shadow-md text-sm">
+                <i class="ph ph-arrow-left"></i> Volver
             </a>
         </div>
-    </header>
+    </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <a href="/" class="legal-back">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-                Volver a la web
-            </a>
-            <h1>Política de Privacidad</h1>
-            <p class="legal-updated">Última actualización: marzo 2026</p>
+    <main class="pt-32 pb-20 px-6">
+        <article class="max-w-3xl mx-auto legal-prose">
+            <p class="text-mega-teal font-bold tracking-widest uppercase text-xs mb-3">Información legal</p>
+            <h1 class="font-display font-extrabold text-4xl lg:text-5xl text-mega-navy mb-4 leading-tight" style="text-wrap:balance">Política de Privacidad</h1>
+            <p class="text-sm text-slate-400 mb-12">Última actualización: marzo de 2026</p>
+
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. es la responsable del tratamiento y, de conformidad con lo establecido en el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 (RGPD) y la Ley Orgánica 3/2018 de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD), garantiza la seguridad y confidencialidad de los datos facilitados por sus clientes y usuarios.</p>
+
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. informa que los datos personales facilitados a través de los formularios de esta web o mediante mensajes de correo electrónico serán incorporados a tratamientos propios y tratados tanto de forma informatizada como en papel.</p>
+
+            <p>Mediante el envío de los formularios existentes en esta web, el remitente da su consentimiento para ser incluido en el mencionado tratamiento con el objetivo de recibir la información solicitada en los formularios o suscripciones.</p>
+
+            <p>En el caso de que el usuario decida cumplimentar algún formulario de este sitio web donde se recaben datos de carácter personal, se le informa que ENERGIA LIBRE COMERCIALIZADORA, S.L.U. adoptará las medidas técnicas y organizativas necesarias para garantizar la seguridad de los datos suministrados, a fin de evitar alteraciones, pérdidas, tratamientos o accesos no autorizados, conforme al estado actual de la tecnología y a la normativa vigente.</p>
+
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U., sin embargo, no puede garantizar la absoluta inexpugnabilidad del sistema, la red de acceso o Internet, y por tanto, la posible violación de los datos mediante accesos fraudulentos por parte de terceros.</p>
+
+            <p>Este sitio web puede contener enlaces a sitios web de terceros con políticas de privacidad ajenas a la de ENERGIA LIBRE COMERCIALIZADORA, S.L.U., que el usuario podrá aceptar o rechazar cuando acceda a ellos.</p>
+
+            <p>El usuario será responsable en todo caso de la veracidad de la información suministrada y se compromete a comunicar a ENERGIA LIBRE COMERCIALIZADORA, S.L.U. cualquier modificación sobre la misma, quedando la empresa exenta de cualquier responsabilidad al respecto.</p>
 
             <h2>Responsable del tratamiento</h2>
             <ul>
-                <li><strong>Denominación social:</strong> ENERGIA LIBRE COMERCIALIZADORA, S.L.U.</li>
-                <li><strong>CIF:</strong> B-90137316</li>
+                <li><strong>Razón social:</strong> ENERGIA LIBRE COMERCIALIZADORA, S.L.U.</li>
+                <li><strong>NIF:</strong> B-90137316</li>
                 <li><strong>Domicilio:</strong> Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1, CP 41013 Sevilla</li>
+                <li><strong>Correo de contacto:</strong> <a href="mailto:fincas@megaenergia.es">fincas@megaenergia.es</a></li>
             </ul>
 
-            <h2>Marco legal</h2>
-            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. gestiona los datos personales de acuerdo con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+            <h2>Finalidad del tratamiento</h2>
+            <p><strong>Gestión de comunicaciones y solicitudes comerciales.</strong> Los datos facilitados a través de los formularios de contacto se utilizan como soporte de información para la gestión de las comunicaciones y relaciones comerciales por vía electrónica con administradores de fincas y comunidades de propietarios. La legitimación del tratamiento se basa en el consentimiento del interesado y en el interés legítimo del responsable. Los datos se conservarán mientras sea necesario para atender la solicitud, hasta la revocación del consentimiento o durante el tiempo requerido por obligaciones legales. ENERGIA LIBRE COMERCIALIZADORA, S.L.U. no cederá datos salvo obligación legal.</p>
 
-            <h2>Recogida y tratamiento de datos</h2>
-            <p>La empresa recoge información personal a través de formularios web y correo electrónico. Los datos se tratan tanto en formato digital como en soporte físico. Al enviar un formulario, el usuario consiente la inclusión de sus datos en los sistemas de tratamiento correspondientes.</p>
+            <p><strong>Prestación del servicio energético.</strong> Tratamos los datos para prestar el servicio solicitado de facturación a clientes y gestión del consumo eléctrico y de gas. La legitimación del tratamiento se basa en el RD de 22 de agosto de 1885 (Código de Comercio) y en el RD 1435/2002, de 27 de diciembre. Los datos se conservarán mientras exista relación comercial, durante un plazo de 6 años desde la última confirmación de interés, o el tiempo necesario para cumplir con las responsabilidades legales. ENERGIA LIBRE COMERCIALIZADORA, S.L.U. podrá ceder los datos a la administración tributaria, entidades financieras y otras organizaciones directamente relacionadas con el responsable.</p>
 
-            <h2>Medidas de seguridad</h2>
-            <p>La organización implementa las medidas técnicas y organizativas necesarias para proteger los datos facilitados frente a accesos no autorizados, alteración o pérdida, de acuerdo con los estándares tecnológicos actuales.</p>
-            <p>La empresa no puede garantizar la seguridad absoluta frente a vulnerabilidades de internet o actuaciones fraudulentas de terceros.</p>
+            <p>En caso de no facilitarnos tus datos personales, no podremos gestionar tu solicitud.</p>
 
-            <h2>Finalidades del tratamiento y bases jurídicas</h2>
-            <h3>Gestión de comunicaciones</h3>
-            <p>Finalidad: gestionar las relaciones comerciales electrónicas. Base jurídica: consentimiento del interesado. Plazo de conservación: hasta la revocación del consentimiento o según los plazos legalmente establecidos.</p>
-
-            <h3>Facturación y gestión de consumo</h3>
-            <p>Finalidad: tramitación de facturas y seguimiento del consumo eléctrico de los clientes, conforme al Código de Comercio (RD 1435/2002). Plazo de conservación: durante la relación comercial o 6 años tras el último contacto.</p>
-
-            <p>Los datos podrán ser cedidos a la administración tributaria, entidades financieras y organizaciones relacionadas, cuando así lo exija la normativa aplicable.</p>
-
-            <h2>Derechos del interesado</h2>
-            <p>Los interesados podrán ejercer sus derechos dirigiéndose a:</p>
+            <h2>Ejercicio de derechos</h2>
+            <p>Si lo deseas, puedes dirigirte a ENERGIA LIBRE COMERCIALIZADORA, S.L.U., con domicilio en Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1, CP 41013 Sevilla, o por correo electrónico a <a href="mailto:fincas@megaenergia.es">fincas@megaenergia.es</a>, adjuntando copia de tu DNI o documento equivalente, para ejercer los siguientes derechos:</p>
             <ul>
-                <li><strong>Dirección:</strong> Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1, CP 41013 Sevilla</li>
-                <li><strong>Requisito:</strong> Copia del DNI o documento identificativo equivalente.</li>
-            </ul>
-            <p>Derechos disponibles:</p>
-            <ul>
-                <li><strong>Acceso:</strong> Confirmación de si se están tratando sus datos y obtención de una copia.</li>
-                <li><strong>Portabilidad:</strong> Recibir sus datos en un formato estructurado y de uso común.</li>
-                <li><strong>Rectificación:</strong> Corrección de datos inexactos o incompletos.</li>
-                <li><strong>Supresión:</strong> Eliminación de datos cuando ya no sean necesarios.</li>
-                <li><strong>Oposición:</strong> Solicitar el cese del tratamiento (salvo motivos legítimos).</li>
-                <li><strong>Limitación:</strong> Solicitar la restricción del tratamiento en determinados supuestos.</li>
-                <li><strong>Revocación del consentimiento:</strong> Retirar el consentimiento en cualquier momento.</li>
+                <li><strong>Derecho de acceso:</strong> obtener confirmación sobre si estamos tratando tus datos personales y, en su caso, acceder a los mismos.</li>
+                <li><strong>Derecho de portabilidad:</strong> recibir los datos personales que nos hayas facilitado en un formato estructurado, de uso común y lectura mecánica, así como transmitirlos a otra entidad.</li>
+                <li><strong>Derecho de rectificación:</strong> solicitar la corrección de datos inexactos.</li>
+                <li><strong>Derecho de supresión:</strong> solicitar la eliminación de los datos cuando ya no sean necesarios.</li>
+                <li><strong>Derecho de oposición:</strong> oponerte al tratamiento de tus datos. Dejarán de tratarse salvo motivos legítimos o en el ejercicio de posibles reclamaciones.</li>
+                <li><strong>Derecho a la limitación del tratamiento:</strong> solicitar la restricción del uso de tus datos personales.</li>
             </ul>
 
-            <h2>Reclamaciones</h2>
-            <p>Si considera que sus derechos no han sido debidamente atendidos, puede presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).</p>
-        </div>
+            <p>Si has dado tu consentimiento, también tienes derecho a retirarlo en cualquier momento, sin que ello afecte a la licitud del tratamiento previo a su retirada.</p>
+
+            <p>Además, puedes presentar una reclamación ante la <strong>Agencia Española de Protección de Datos</strong> (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>) si consideras que tus derechos no han sido correctamente atendidos.</p>
+        </article>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#121221] pt-16 pb-10 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="h-8 w-auto brightness-0 invert">
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+                    <a href="/" class="hover:text-white transition-colors">Inicio</a>
+                    <a href="aviso-legal.html" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="politica-de-privacidad.html" class="hover:text-white transition-colors">Privacidad</a>
+                    <a href="politica-de-cookies.html" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+            <p class="text-slate-600 text-xs text-center mt-8">© 2026 Mega Energía. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -1,137 +1,152 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Cookies - Mega Energía</title>
+    <title>Política de Cookies | Mega Energía Fincas</title>
+    <meta name="description" content="Política de cookies de Mega Energía. Tipos de cookies utilizadas y cómo gestionarlas.">
     <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="legal.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mega: {
+                            navy: '#1A1A2E',
+                            navyLight: '#2A2A4A',
+                            amber: '#F8AD16',
+                            teal: '#30B7BB',
+                            tealLight: '#E5F6F6',
+                            surface: '#F8FAFC',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .legal-prose h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; line-height: 1.3; color: #1A1A2E; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
+        .legal-prose h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.15rem; color: #30B7BB; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .legal-prose p { color: #475569; line-height: 1.75; margin-bottom: 1rem; }
+        .legal-prose strong { color: #1A1A2E; font-weight: 700; }
+        .legal-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+        .legal-prose ul li { color: #475569; line-height: 1.75; margin-bottom: 0.5rem; }
+        .legal-prose a { color: #30B7BB; text-decoration: underline; }
+        .legal-prose a:hover { color: #1A1A2E; }
+        .legal-prose table { width: 100%; border-collapse: collapse; margin: 1rem 0 2rem; font-size: 0.9rem; }
+        .legal-prose th { text-align: left; padding: 0.75rem; background: #F8FAFC; color: #1A1A2E; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid #E2E8F0; }
+        .legal-prose td { padding: 0.75rem; border: 1px solid #E2E8F0; color: #475569; }
+        @media (max-width: 640px) {
+            .legal-prose table { font-size: 0.8rem; }
+            .legal-prose th, .legal-prose td { padding: 0.5rem; }
+        }
+    </style>
 </head>
-<body>
+<body class="font-sans text-slate-600 bg-white antialiased">
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="/" class="logo">
-                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="logo-img">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-mega-border/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 cursor-pointer">
+                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="h-10 w-auto">
+            </a>
+            <a href="/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-display font-semibold text-white bg-mega-navy hover:bg-mega-navyLight transition-colors shadow-md text-sm">
+                <i class="ph ph-arrow-left"></i> Volver
             </a>
         </div>
-    </header>
+    </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <a href="/" class="legal-back">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-                Volver a la web
-            </a>
-            <h1>Política de Cookies</h1>
-            <p class="legal-updated">Última actualización: marzo 2026</p>
+    <main class="pt-32 pb-20 px-6">
+        <article class="max-w-3xl mx-auto legal-prose">
+            <p class="text-mega-teal font-bold tracking-widest uppercase text-xs mb-3">Información legal</p>
+            <h1 class="font-display font-extrabold text-4xl lg:text-5xl text-mega-navy mb-4 leading-tight" style="text-wrap:balance">Política de Cookies</h1>
+            <p class="text-sm text-slate-400 mb-12">Última actualización: marzo de 2026</p>
+
+            <p>Este sitio web es propiedad de <strong>ENERGIA LIBRE COMERCIALIZADORA, S.L.U.</strong>. Utilizamos cookies propias y de terceros para analizar el uso del sitio web y mejorar tu experiencia como usuario.</p>
+            <p>Al navegar por nuestro sitio aceptas el uso de cookies según esta política. Puedes cambiar la configuración de cookies en cualquier momento o retirar tu consentimiento desde tu navegador.</p>
+            <p>Las cookies se clasifican en distintas categorías según su funcionalidad. A continuación te explicamos cada una de ellas y detallamos las cookies que utilizamos.</p>
 
             <h2>¿Qué son las cookies?</h2>
-            <p>Una cookie es un pequeño archivo de texto que un sitio web almacena en el dispositivo del usuario cuando lo visita. El presente sitio web pertenece a ENERGIA LIBRE COMERCIALIZADORA, S.L.U. y utiliza cookies propias y de terceros para analizar el uso del sitio y mejorar la experiencia del usuario.</p>
+            <p>Una cookie es un pequeño archivo de texto que un sitio web coloca en tu dispositivo al visitarlo. Estas cookies permiten que el sitio recuerde tus acciones y preferencias durante un periodo de tiempo, como el idioma, el inicio de sesión o qué páginas has visitado.</p>
 
             <h2>Tipos de cookies que utilizamos</h2>
+            <ul>
+                <li><strong>Cookies técnicas:</strong> necesarias para que el sitio funcione correctamente.</li>
+                <li><strong>Cookies de personalización:</strong> permiten recordar tus preferencias, como idioma o región.</li>
+                <li><strong>Cookies analíticas:</strong> nos ayudan a comprender cómo interactúas con la web.</li>
+                <li><strong>Cookies sociales:</strong> facilitan la interacción con redes sociales desde nuestro sitio.</li>
+                <li><strong>Cookies publicitarias:</strong> utilizadas para mostrarte anuncios relevantes.</li>
+            </ul>
 
-            <h3>Cookies técnicas (necesarias)</h3>
-            <p>Son imprescindibles para el correcto funcionamiento del sitio web.</p>
+            <h2>Listado de cookies utilizadas</h2>
 
-            <h3>Cookies de personalización</h3>
-            <p>Permiten recordar las preferencias del usuario, como el idioma o la región.</p>
+            <h3>Cookies necesarias</h3>
+            <table>
+                <thead>
+                    <tr><th>Nombre</th><th>Proveedor</th><th>Finalidad</th><th>Duración</th><th>Tipo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>PHPSESSID</td><td>Propia</td><td>Gestiona la sesión del usuario.</td><td>Sesión</td><td>HTTP</td></tr>
+                    <tr><td>consent_status</td><td>Propia</td><td>Recuerda tus preferencias de consentimiento.</td><td>Sesión</td><td>HTTP</td></tr>
+                </tbody>
+            </table>
 
             <h3>Cookies analíticas</h3>
-            <p>Ayudan a comprender cómo interactúan los usuarios con el sitio web.</p>
+            <table>
+                <thead>
+                    <tr><th>Nombre</th><th>Proveedor</th><th>Finalidad</th><th>Duración</th><th>Tipo</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>_ga</td><td>Google</td><td>Distingue a los usuarios (Google Analytics).</td><td>2 años</td><td>HTTP</td></tr>
+                    <tr><td>_gat_UA-XXXXXXXXX-X</td><td>Google</td><td>Limita la velocidad de solicitud.</td><td>1 minuto</td><td>HTTP</td></tr>
+                    <tr><td>_gid</td><td>Google</td><td>Analiza el comportamiento del usuario.</td><td>24 horas</td><td>HTTP</td></tr>
+                </tbody>
+            </table>
 
             <h3>Cookies sociales</h3>
-            <p>Permiten la interacción con redes sociales desde el sitio web.</p>
+            <p>En ocasiones incluimos contenido de redes sociales, como botones para compartir o vídeos incrustados. Estos servicios pueden establecer sus propias cookies. Te recomendamos revisar las políticas de privacidad de dichas plataformas.</p>
 
-            <h3>Cookies publicitarias</h3>
-            <p>Permiten mostrar publicidad relevante al usuario.</p>
-
-            <h2>Cookies necesarias</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Proveedor</th>
-                        <th>Finalidad</th>
-                        <th>Duración</th>
-                        <th>Tipo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>PHPSESSID</td>
-                        <td>Propia</td>
-                        <td>Gestión de sesión del usuario</td>
-                        <td>Sesión</td>
-                        <td>HTTP</td>
-                    </tr>
-                    <tr>
-                        <td>consent_status</td>
-                        <td>Propia</td>
-                        <td>Recordar preferencias de consentimiento</td>
-                        <td>Sesión</td>
-                        <td>HTTP</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>Cookies analíticas</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Proveedor</th>
-                        <th>Finalidad</th>
-                        <th>Duración</th>
-                        <th>Tipo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>_ga</td>
-                        <td>Google</td>
-                        <td>Distinguir usuarios (Google Analytics)</td>
-                        <td>2 años</td>
-                        <td>HTTP</td>
-                    </tr>
-                    <tr>
-                        <td>_gat</td>
-                        <td>Google</td>
-                        <td>Limitar velocidad de peticiones</td>
-                        <td>1 minuto</td>
-                        <td>HTTP</td>
-                    </tr>
-                    <tr>
-                        <td>_gid</td>
-                        <td>Google</td>
-                        <td>Analizar comportamiento del usuario</td>
-                        <td>24 horas</td>
-                        <td>HTTP</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>Cookies de redes sociales</h2>
-            <p>Cuando el sitio web incluye contenido embebido de redes sociales, estos servicios pueden establecer sus propias cookies.</p>
-
-            <h2>Gestión de cookies en el navegador</h2>
-            <p>El usuario puede configurar su navegador para permitir, bloquear o eliminar las cookies. A continuación se facilitan instrucciones para los principales navegadores:</p>
+            <h2>Gestión de cookies</h2>
+            <p>Puedes configurar tu navegador para permitir, bloquear o eliminar cookies. Ten en cuenta que desactivarlas podría afectar a ciertas funcionalidades del sitio.</p>
+            <p>Consulta las instrucciones para cada navegador:</p>
             <ul>
-                <li><strong>Chrome:</strong> Configuración > Privacidad y seguridad > Cookies</li>
-                <li><strong>Firefox:</strong> Opciones > Privacidad y seguridad > Cookies</li>
-                <li><strong>Edge:</strong> Configuración > Cookies y permisos del sitio</li>
-                <li><strong>Safari:</strong> Preferencias > Privacidad > Cookies</li>
-                <li><strong>Opera:</strong> Configuración > Privacidad y seguridad > Cookies</li>
+                <li><a href="https://support.google.com/chrome/answer/95647?hl=es" target="_blank" rel="noopener">Google Chrome</a></li>
+                <li><a href="https://support.mozilla.org/es/" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+                <li><a href="https://support.microsoft.com/es-es" target="_blank" rel="noopener">Microsoft Edge</a></li>
+                <li><a href="https://support.apple.com/es-es/HT201265" target="_blank" rel="noopener">Safari</a></li>
+                <li><a href="https://help.opera.com/es/latest/web-preferences/#cookies" target="_blank" rel="noopener">Opera</a></li>
             </ul>
-            <p>La desactivación de cookies puede afectar a la funcionalidad del sitio web.</p>
-        </div>
+            <p>Para más información sobre cómo tratamos tus datos, consulta nuestro <a href="aviso-legal.html">Aviso Legal</a> y nuestra <a href="politica-de-privacidad.html">Política de Privacidad</a>.</p>
+        </article>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#121221] pt-16 pb-10 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="h-8 w-auto brightness-0 invert">
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+                    <a href="/" class="hover:text-white transition-colors">Inicio</a>
+                    <a href="aviso-legal.html" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="politica-de-privacidad.html" class="hover:text-white transition-colors">Privacidad</a>
+                    <a href="politica-de-cookies.html" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+            <p class="text-slate-600 text-xs text-center mt-8">© 2026 Mega Energía. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

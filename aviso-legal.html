@@ -1,72 +1,124 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviso Legal - Mega Energía</title>
+    <title>Aviso Legal | Mega Energía Fincas</title>
+    <meta name="description" content="Aviso legal de Mega Energía. Datos identificativos, condiciones de uso, responsabilidad y propiedad intelectual.">
     <meta name="robots" content="noindex, nofollow">
+
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="legal.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mega: {
+                            navy: '#1A1A2E',
+                            navyLight: '#2A2A4A',
+                            amber: '#F8AD16',
+                            teal: '#30B7BB',
+                            tealLight: '#E5F6F6',
+                            surface: '#F8FAFC',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .legal-prose h2 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.5rem; line-height: 1.3; color: #1A1A2E; margin-top: 2.5rem; margin-bottom: 1rem; letter-spacing: -0.02em; }
+        .legal-prose h3 { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 1.15rem; color: #30B7BB; margin-top: 2rem; margin-bottom: 0.75rem; }
+        .legal-prose p { color: #475569; line-height: 1.75; margin-bottom: 1rem; }
+        .legal-prose strong { color: #1A1A2E; font-weight: 700; }
+        .legal-prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1.25rem; }
+        .legal-prose ul li { color: #475569; line-height: 1.75; margin-bottom: 0.5rem; }
+        .legal-prose a { color: #30B7BB; text-decoration: underline; }
+        .legal-prose a:hover { color: #1A1A2E; }
+    </style>
 </head>
-<body>
+<body class="font-sans text-slate-600 bg-white antialiased">
 
-    <!-- HEADER -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="/" class="logo">
-                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="logo-img">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-mega-border/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 cursor-pointer">
+                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="h-10 w-auto">
+            </a>
+            <a href="/" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-display font-semibold text-white bg-mega-navy hover:bg-mega-navyLight transition-colors shadow-md text-sm">
+                <i class="ph ph-arrow-left"></i> Volver
             </a>
         </div>
-    </header>
+    </nav>
 
-    <main class="legal-page">
-        <div class="container">
-            <a href="/" class="legal-back">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
-                Volver a la web
-            </a>
-            <h1>Aviso Legal</h1>
-            <p class="legal-updated">Última actualización: marzo 2026</p>
+    <main class="pt-32 pb-20 px-6">
+        <article class="max-w-3xl mx-auto legal-prose">
+            <p class="text-mega-teal font-bold tracking-widest uppercase text-xs mb-3">Información legal</p>
+            <h1 class="font-display font-extrabold text-4xl lg:text-5xl text-mega-navy mb-4 leading-tight" style="text-wrap:balance">Aviso Legal</h1>
+            <p class="text-sm text-slate-400 mb-12">Última actualización: marzo de 2026</p>
 
             <h2>I. Datos identificativos</h2>
-            <p>En cumplimiento del deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, a continuación se reflejan los siguientes datos:</p>
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U., como titular del sitio web y de acuerdo con el artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, pone a su disposición los siguientes datos:</p>
             <ul>
                 <li><strong>Denominación social:</strong> ENERGIA LIBRE COMERCIALIZADORA, S.L.U.</li>
-                <li><strong>CIF:</strong> B-90137316</li>
-                <li><strong>Domicilio:</strong> Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1, CP 41013 Sevilla</li>
-                <li><strong>Inscripción:</strong> Registro Mercantil de Sevilla, Tomo 5864, Folio 170, Hoja SE-101402</li>
+                <li><strong>NIF:</strong> B-90137316</li>
+                <li><strong>Registro Mercantil:</strong> Sevilla, Tomo 5864 del Libro de sociedades, folio 170, hoja número SE-101402</li>
+                <li><strong>Domicilio social:</strong> Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1, CP 41013 Sevilla</li>
+                <li><strong>Correo de contacto:</strong> <a href="mailto:fincas@megaenergia.es">fincas@megaenergia.es</a></li>
             </ul>
-            <p>El presente sitio web tiene por finalidad dar a conocer a los usuarios de Internet las actividades, productos y servicios que esta empresa desarrolla.</p>
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. informa que la web fincas.megaenergia.es tiene por objeto facilitar al público en general, y en especial a los administradores de fincas, el conocimiento de los servicios de gestión energética que esta entidad presta a comunidades de propietarios.</p>
 
             <h2>II. Condiciones de uso</h2>
-            <p>El acceso al presente sitio web atribuye la condición de usuario e implica la aceptación plena y sin reservas de todas y cada una de las condiciones publicadas en este Aviso Legal.</p>
-            <p>El usuario se compromete a hacer un uso adecuado de los contenidos y servicios que se ofrecen y a no emplearlos para incurrir en actividades ilícitas o contrarias a la buena fe y al ordenamiento legal. El usuario se compromete a no causar daños en los sistemas físicos y lógicos del sitio web, de sus proveedores o de terceras personas.</p>
-            <p>El usuario será responsable de la veracidad y exactitud de los datos proporcionados, así como de la confidencialidad de sus credenciales de acceso. El usuario responderá de todas las acciones realizadas bajo sus credenciales.</p>
+            <p>El acceso y utilización de este sitio web le atribuye la condición de usuario, aceptando con dicho acceso las Condiciones de Uso expuestas a continuación.</p>
+            <p>Este sitio web proporciona al usuario acceso a información y contenidos sobre los que el usuario asume la responsabilidad, extendiéndose esta al proceso de registro o solicitud que pudiera ser necesario para acceder a determinados servicios o contenidos.</p>
+            <p>En el proceso de registro o contacto, el usuario será igualmente responsable de facilitar información veraz, legítima y actualizada, así como de hacer un uso diligente y confidencial de los datos de acceso proporcionados.</p>
+            <p>El usuario se compromete a hacer un uso adecuado de la información, contenidos y servicios del presente sitio web y, en especial, a no realizar ninguna acción que pudiera causar daños físicos o lógicos al sistema, así como a no intentar acceder al mismo de modo fraudulento utilizando datos de acceso no autorizados.</p>
 
-            <h2>III. Exclusión de responsabilidad</h2>
-            <p>La empresa no se hace responsable de:</p>
-            <ul>
-                <li>Las consecuencias derivadas del acceso al sitio web o del uso de su información.</li>
-                <li>Las modificaciones que puedan realizarse sin previo aviso en el sitio web.</li>
-                <li>La exactitud de los precios mostrados, que tienen carácter orientativo.</li>
-                <li>Los errores u omisiones en los contenidos.</li>
-                <li>La falta de disponibilidad del sitio web.</li>
-                <li>La transmisión de virus o programas maliciosos, a pesar de haber adoptado las medidas de seguridad adecuadas.</li>
-            </ul>
-            <p>Para información precisa sobre precios, el usuario deberá contactar directamente con la empresa.</p>
+            <h2>III. Responsabilidad</h2>
+            <p>Tanto el acceso a esta web como el uso que pueda hacerse de la información contenida en la misma es de la exclusiva responsabilidad de quien lo realiza. El usuario será responsable de todas las acciones que realice con su identificador de usuario.</p>
+            <p>En concreto, será responsable de escoger contraseñas robustas (combinaciones de cifras, letras y, cuando el sistema lo permita, signos de puntuación y caracteres especiales) y difíciles de adivinar. ENERGIA LIBRE COMERCIALIZADORA, S.L.U. no responderá de ninguna consecuencia, daño o perjuicio que pudieran derivarse de dicho acceso o uso de la información.</p>
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. se reserva el derecho de efectuar sin previo aviso, y sin asumir responsabilidad alguna por ello, las modificaciones que considere oportunas en su sitio web, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como la forma en la que estos aparezcan presentados o localizados.</p>
+            <p>Cualquier precio u oferta que pueda ver en nuestra web será solamente orientativo. Si el usuario desea conocer con exactitud el precio de un servicio, deberá contactar con ENERGIA LIBRE COMERCIALIZADORA, S.L.U. para que le elabore un presupuesto personalizado.</p>
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. no garantiza la inexistencia de errores en el acceso a la web ni en su contenido, ni que este se encuentre actualizado, aunque desarrollará sus mejores esfuerzos para evitarlos, subsanarlos o actualizarlos.</p>
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran derivarse de errores u omisiones en los contenidos, falta de disponibilidad del portal o transmisión de virus o programas maliciosos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.</p>
 
             <h2>IV. Propiedad intelectual e industrial</h2>
-            <p>Quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de la empresa.</p>
-            <p>El usuario se compromete a respetar los derechos de propiedad intelectual e industrial. Podrá visualizar, imprimir, copiar y almacenar los contenidos del sitio web exclusivamente para su uso personal y privado. Las marcas de terceros que pudieran aparecer en el sitio web se muestran exclusivamente con fines informativos.</p>
+            <p>ENERGIA LIBRE COMERCIALIZADORA, S.L.U. es propietaria o dispone de los debidos permisos relativos a los derechos de propiedad intelectual de este sitio web y de los elementos contenidos en el mismo: textos, imágenes, sonidos, vídeos, marcas, logotipos, diseño, etc.</p>
+            <p>En virtud de lo dispuesto en los artículos 8 y 32.1 de la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de este sitio web en cualquier soporte y por cualquier medio técnico, sin la autorización de ENERGIA LIBRE COMERCIALIZADORA, S.L.U. y/o de sus respectivos autores o titulares de los derechos.</p>
+            <p>El usuario podrá visualizar, imprimir, copiar y almacenar los elementos de este sitio web siempre y cuando sea, única y exclusivamente, para su uso personal y privado.</p>
+            <p>La utilización no autorizada de la información contenida en esta web, así como la lesión de los derechos de Propiedad Intelectual o Industrial de ENERGIA LIBRE COMERCIALIZADORA, S.L.U., dará lugar a las responsabilidades legalmente establecidas.</p>
+            <p>Todos los productos y servicios de estas páginas que NO son propiedad de ENERGIA LIBRE COMERCIALIZADORA, S.L.U. son marcas registradas por sus respectivos propietarios y son reconocidas como tales. Solamente aparecen en la web a efectos de promoción y de recopilación de información. Estos propietarios pueden solicitar la modificación o eliminación de la información que les pertenece.</p>
 
-            <h2>V. Legislación aplicable</h2>
-            <p>Para la resolución de todas las controversias o cuestiones relacionadas con el presente sitio web, será de aplicación la legislación española, siendo competentes para la resolución de todos los conflictos los Juzgados y Tribunales competentes conforme a derecho.</p>
-        </div>
+            <h2>V. Ley aplicable y jurisdicción</h2>
+            <p>El presente aviso legal y las condiciones generales se rigen por la legislación española. Cualquier tipo de controversia o litigio relativo al uso de este sitio web será interpretado conforme a las leyes vigentes en el lugar de residencia del propietario de este sitio web, teniendo competencia para la resolución de todo litigio o conflicto que pueda surgir los Juzgados y Tribunales competentes dentro del ámbito territorial español, renunciando expresamente el usuario a cualquier otro fuero.</p>
+        </article>
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#121221] pt-16 pb-10 border-t border-slate-800 mt-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <img src="images/logo_megaenergia.png" alt="Mega Energía" class="h-8 w-auto brightness-0 invert">
+                <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+                    <a href="/" class="hover:text-white transition-colors">Inicio</a>
+                    <a href="aviso-legal.html" class="hover:text-white transition-colors">Aviso Legal</a>
+                    <a href="politica-de-privacidad.html" class="hover:text-white transition-colors">Privacidad</a>
+                    <a href="politica-de-cookies.html" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+            </div>
+            <p class="text-slate-600 text-xs text-center mt-8">© 2026 Mega Energía. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
