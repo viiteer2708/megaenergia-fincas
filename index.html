@@ -6,6 +6,9 @@
     <title>Mega Energía | Soluciones Energéticas para Administradores de Fincas</title>
     <meta name="description" content="Ocúpate de lo importante. Nosotros nos encargamos de las gestiones de luz y gas de tus comunidades. Sin cortes, sin permanencia, un solo interlocutor.">
 
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="canonical" href="https://fincas.megaenergia.es/">
+
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:url" content="https://fincas.megaenergia.es/">
     <meta property="og:type" content="website">
@@ -34,39 +37,7 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        mega: {
-                            navy: '#1A1A2E',
-                            navyLight: '#2A2A4A',
-                            amber: '#F8AD16',
-                            amberHover: '#E09A10',
-                            teal: '#30B7BB',
-                            tealLight: '#E5F6F6',
-                            surface: '#F8FAFC',
-                            border: '#E2E8F0'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Lato', 'sans-serif'],
-                        display: ['Montserrat', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        'soft': '0 10px 40px -10px rgba(26, 26, 46, 0.08)',
-                        'float': '0 20px 40px -20px rgba(0, 0, 0, 0.15)',
-                    },
-                    transitionTimingFunction: {
-                        'spring': 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="/css/tailwind.css">
 
     <style>
         ::-webkit-scrollbar { width: 10px; }
@@ -246,6 +217,53 @@
             .shape-blob { animation: none !important; }
         }
     </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://fincas.megaenergia.es/#organization",
+      "name": "Mega Energía Fincas",
+      "url": "https://fincas.megaenergia.es/",
+      "logo": "https://fincas.megaenergia.es/images/logo_megaenergia.png",
+      "image": "https://fincas.megaenergia.es/images/og-fincas.png",
+      "email": "fincas@megaenergia.es",
+      "telephone": "+34623723217",
+      "description": "Gestión energética integral de luz y gas para administradores de fincas y comunidades de propietarios.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Energía 10",
+        "postalCode": "08915",
+        "addressLocality": "Badalona",
+        "addressRegion": "Barcelona",
+        "addressCountry": "ES"
+      },
+      "areaServed": { "@type": "Country", "name": "España" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://fincas.megaenergia.es/#website",
+      "url": "https://fincas.megaenergia.es/",
+      "name": "Mega Energía Fincas",
+      "inLanguage": "es-ES",
+      "publisher": { "@id": "https://fincas.megaenergia.es/#organization" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://fincas.megaenergia.es/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "¿Esto me va a dar más trabajo del que me quita?", "acceptedAnswer": { "@type": "Answer", "text": "No. Solo necesitamos documentación básica (facturas o datos del suministro). Nosotros hacemos el trabajo pesado. La mayoría de administradores están operativos en menos de 48 horas." } },
+        { "@type": "Question", "name": "¿Puede haber cortes de luz o gas con el cambio?", "acceptedAnswer": { "@type": "Answer", "text": "No. Los cambios se realizan sin interrupciones en el suministro. Es un proceso regulado que no afecta al servicio de la comunidad." } },
+        { "@type": "Question", "name": "¿Y si algo sale mal? ¿Quién responde?", "acceptedAnswer": { "@type": "Answer", "text": "Nosotros. Te acompañamos en todo el proceso y gestionamos cualquier incidencia. No desaparecemos después de la venta: el acompañamiento continuo es lo que nos diferencia." } },
+        { "@type": "Question", "name": "¿Puedo decidir en qué comunidades aplicar cambios?", "acceptedAnswer": { "@type": "Answer", "text": "Siempre. Tú decides dónde, cuándo y qué se cambia. Nosotros proponemos, tú apruebas. No hacemos ningún cambio sin tu consentimiento." } },
+        { "@type": "Question", "name": "¿Hay compromiso de permanencia?", "acceptedAnswer": { "@type": "Answer", "text": "Puedes empezar con una revisión sin compromiso. Si no ves mejoras claras, no hacemos cambios. Sin letra pequeña." } },
+        { "@type": "Question", "name": "¿Trabajáis específicamente con administradores de fincas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Disponemos de un departamento especializado y diseñado para despachos de administración de fincas y carteras de comunidades. Entendemos tu día a día y nos ocupamos de absolutamente todo durante el proceso." } }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body class="font-sans text-slate-600 bg-white antialiased selection:bg-mega-amber selection:text-white overflow-x-hidden">
 
@@ -304,6 +322,7 @@
                     Dedicas más tiempo a las facturas de luz y gas<br class="hidden lg:block"> de tus comunidades del que nadie sospecha
                 </p>
                 <h1 class="h1-mega mb-3 text-balance">
+                    <span class="block text-xl lg:text-2xl font-bold text-mega-navy/90 mb-2 leading-snug">Gestión energética para administradores de fincas</span>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-mega-amber to-[#FFCA64]">Y nadie te lo agradece</span>
                 </h1>
                 <p class="text-base lg:text-lg text-slate-500 mb-1 max-w-lg">
