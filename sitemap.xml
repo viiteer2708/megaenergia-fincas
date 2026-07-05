@@ -2,15 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://fincas.megaenergia.es/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://fincas.megaenergia.es/blog/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-07-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Páginas de servicio (servicio + segmento) -->
+  <url>
+    <loc>https://fincas.megaenergia.es/servicios/cambio-de-titularidad-comunidades/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/servicios/energia-reactiva-comunidades/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/servicios/cambiar-comercializadora-comunidades/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/servicios/autoconsumo-colectivo-comunidades/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/servicios/optimizacion-potencia-comunidades/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/servicios/agrupacion-puntos-suministro/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://fincas.megaenergia.es/blog/como-funciona-cambio-comercializadora-comunidad.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/blog/como-leer-factura-luz-comunidad-propietarios.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/blog/que-tarifa-potencia-zonas-comunes-comunidad.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fincas.megaenergia.es/blog/ayudas-subvenciones-eficiencia-energetica-comunidades.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://fincas.megaenergia.es/blog/autoconsumo-colectivo-comunidades-guia-administrador.html</loc>
