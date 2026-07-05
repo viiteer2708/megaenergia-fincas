@@ -63,6 +63,43 @@ Este documento fusiona todos los hallazgos brutos en **un solo plan**, ya dedupl
 
 > Todos los cambios sobre `index.html` salvo donde se indique. **No hacer push sin permiso de Victor.** Los snippets completos están en **§2.4**, referenciados por ID.
 
+### 2.0 Estado de aplicación — iteración 1 (2026-07-05, rama `feat/seo-local-loop`)
+
+> Marca de ejecución por item (nunca se borran items). Gate `scripts/seo-gate.mjs`: **0 errores** (3 warnings preexistentes de baseline). CSS recompilado con `npm run build:css`.
+
+**P1**
+- `WEB-NAP-01` — **[APLICADO]** Dirección Badalona→Sevilla en footer y JSON-LD `address`; añadido `legalName` real + razón social/NIF visibles en footer. (Residuo §3.1-A sigue siendo decisión de Victor.)
+- `F09-1` — **[APLICADO]** H2 "Qué hacemos" reclama la keyword nº2 ("la comercializadora especializada en administradores de fincas") + subcopy.
+- `A10-1` — **[APLICADO]** Teléfono `tel:+34623723217` clicable above-the-fold (desktop + botón-icono móvil). Nota: el número ya se publicaba en `#contacto`; su condición de línea oficial del canal AAFF sigue `PENDIENTE DE DATO` (Victor, §3.2).
+- `A11-1` — **[APLICADO]** 3 páginas servicio+segmento tanda 1 creadas (`/servicios/cambio-de-titularidad-comunidades/`, `/energia-reactiva-comunidades/`, `/cambiar-comercializadora-comunidades/`), con proceso/documentación/FAQ únicos (checklist anti-doorway) y en sitemap con canonical.
+- `A17-01` — **[APLICADO]** 6 FAQ de mecánica visibles en `#faq` + en el `FAQPage`; post pilar `blog/como-funciona-cambio-comercializadora-comunidad.html` publicado.
+- `A19-01` — **[APLICADO]** Blog reactivado: 4 posts nuevos (2026-07-05), índice del blog actualizado, `sitemap.xml` con lastmod y nuevas URLs. Cadencia 2/mes documentada.
+
+**P2**
+- `F16-1` — **[APLICADO]** H2 "Qué incluye" con "luz y gas" + "comunidades de propietarios"; H1 refuerza "luz y gas".
+- `META` — **[APLICADO]** Meta description con keyword núcleo + gancho transaccional.
+- `SERV` — **[APLICADO]** 4 bullets nuevos en "Qué incluye" con enlaces internos a guías (reactiva, autoconsumo).
+- `A10-2` — **[APLICADO]** Cifras demo `-32,4%` → "En revisión" y `-15% Ahorro` → "Tarifa optimizada / Ejemplo".
+- `SCHEMA` — **[APLICADO]** Nodo `Service` + `legalName` + `parentOrganization` + `sameAs` en Organization; enlace visible "Parte del grupo Mega Energía" en footer. `sameAs` solo con URL real (`megaenergia.es`); LinkedIn/Instagram omitidos por `PENDIENTE DE DATO` (regla de oro nº5 — no URLs inventadas).
+- `A11-2` — **[APLICADO]** 3 páginas servicio+segmento tanda 2 (`/autoconsumo-colectivo-comunidades/`, `/optimizacion-potencia-comunidades/`, `/agrupacion-puntos-suministro/`).
+- `A11-3` — **[APLICADO]** Footer "Servicios" enlaza a páginas reales; grid "Servicios que gestionamos por ti" en `#servicios` enlaza a las 6 páginas.
+- `A17-02` — **[APLICADO]** `blog/como-leer-factura-luz-comunidad-propietarios.html`.
+- `A17-03` — **[APLICADO]** `blog/ayudas-subvenciones-eficiencia-energetica-comunidades.html` (con aviso "según convocatoria en vigor", sin importes ni promesa de concesión).
+- `A17-04` — **[APLICADO]** `blog/que-tarifa-potencia-zonas-comunes-comunidad.html`.
+- `A19-02` — **[APLICADO]** Política editorial 100% AAFF documentada como comentario en `blog/index.html`.
+- `F5` — **[AMBIGUO: parcial]** Textura de terceros (`transparenttextures.com`) eliminada → sustituida por patrón CSS inline (quita petición externa y roce RGPD). **Aplazados:** self-host de Montserrat/Lato (exige descargar/commitear binarios de fuente y editar la cabecera de ~24 páginas, con riesgo de regresión tipográfica global) y subset de Phosphor (**bloqueado**: no hay `pyftsubset`/`fonttools` en el entorno). Mejora de rendimiento no-SEO-core; se deja para una iteración dedicada.
+
+**P3** (aplicados solo los triviales)
+- `F16-STRAT` — **[APLICADO]** Estrategia respetada: money page vertical única + clúster servicio+segmento + blog; cero páginas por ciudad (anti-doorway).
+- `F16-4` — **[APLICADO parcial]** El post pilar (A17-01) actúa de hub canónico del clúster "cambio" y enlaza los dos posts solapados con anchors diferenciados ("10 mitos" vs "¿merece la pena?"). No se editaron los dos posts antiguos para no arriesgar; su rol/ángulo distinto queda establecido desde el pilar.
+- `A17-05` — **[NO APLICADO — P3 no trivial]** Post de puntos de recarga VE: requiere verificar marco normativo (ITC-BT-52) y mayorías antes de publicar cifras. Queda en cola editorial.
+- `A17-06` — **[NO APLICADO — P3 no trivial]** Post LED/eficiencia zonas comunes: post nuevo completo, queda en cola editorial (cadencia A19-01).
+- `A10-7` — **[APLICADO]** "Provincia" y "¿Qué te interesa?" pasan a opcionales (obligatorios: nombre, teléfono, email, privacidad).
+- `F8` — **[APLICADO]** `auditoria-seo-fincas-megaenergia-es.html` fuera del deploy (añadido a `.vercelignore`); `CAF CADIZ.jpeg`/`CAF Málaga.jpeg` → `caf-cadiz.jpeg`/`caf-malaga.jpeg` + refs actualizadas.
+- `A10-8` — **[APLICADO]** Placeholder de teléfono `600 000 000` → `Ej: 612 345 678` (cosmético; ya estaba "cerrado sin acción").
+
+> **Cola para Victor (§3) intacta** (GBP, reseñas, citaciones/backlinks, medición GA4/GSC, testimonios/E-E-A-T): son acciones/decisiones fuera del repo. Read-only en deploy/DNS/secretos: no se toca Vercel ni DNS.
+
 ### 2.1 Prioridad P1 (WEB)
 
 | ID | Páginas | Acción | Texto listo |
