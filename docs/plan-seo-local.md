@@ -332,16 +332,17 @@ Cada nuevo post debe responder a una duda **del administrador de fincas o de la 
 
 ### 3.1 NAP y datos del negocio
 
-**A) Confirmar NAP canónico y coherencia** *(residuo de WEB-NAP-01 · P1 · `AMBIGUO`)*
-El equipo ya corrige Badalona → Sevilla en la web (§2.4). Falta tu decisión de negocio:
-1. Confirmar que **Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1, 41013 Sevilla** es la dirección a exhibir públicamente, **o** si prefieres modo área-de-servicio (ocultar la calle) por ser servicio nacional sin atención al público. *Recomendación: mostrarla, para coherencia NAP/E-E-A-T con las páginas legales.*
-2. Verificar que ese NAP coincide **carácter a carácter** con la ficha de Google Business Profile (si existe) y con `megaenergia.es`.
+**A) NAP canónico — RESUELTO por Victor (2026-07-05)**
+> ⚠️ **CORRECCIÓN:** el loop cambió por error Badalona → Sevilla al confundir el **domicilio operativo** (Badalona) con la **razón social** del aviso legal (Sevilla). **Victor confirma que la sede real es Calle Energía 10, 08915 Badalona.** El NAP público de la home se revirtió a Badalona (commit `3bf76e3`); las páginas legales conservan Sevilla como domicilio social de la S.L.U. (obligatorio). Toda la narrativa de este plan que trata "Badalona" como dirección inventada es **incorrecta**: ignórala.
+
+Coherencia pendiente (menor): el footer dice "Sede Central: Badalona" y el aviso legal dice domicilio social en Sevilla — es sede operativa vs. domicilio social, aceptable. Verificar que este NAP coincide **carácter a carácter** con el GBP (si existe) y con `megaenergia.es`.
 
 **NAP canónico (pegar idéntico en todas partes):**
 ```
 Nombre comercial: Mega Energía (canal Administradores de Fincas)
 Razón social: ENERGIA LIBRE COMERCIALIZADORA, S.L.U. · NIF B-90137316
-Dirección: Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1, 41013 Sevilla
+Dirección (sede): Calle Energía 10, 08915 Badalona, Barcelona
+Domicilio social (solo aviso legal): Avenida Diego Martínez Barrio 10, 2ª Planta Módulo 2.1, 41013 Sevilla
 Teléfono: +34 623 72 32 17
 Email: fincas@megaenergia.es
 Web: https://fincas.megaenergia.es
