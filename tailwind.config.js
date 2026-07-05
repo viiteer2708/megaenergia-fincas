@@ -7,6 +7,7 @@ module.exports = {
     './politica-de-cookies.html',
     './blog/index.html',
     './blog/*.html',
+    './servicios/**/*.html',
   ],
   // Clases que el JS añade en runtime (no aparecen en el HTML estático).
   safelist: ['shadow-sm', 'py-2'],
