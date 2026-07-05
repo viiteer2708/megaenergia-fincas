@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mega Energía | Soluciones Energéticas para Administradores de Fincas</title>
-    <meta name="description" content="Ocúpate de lo importante. Nosotros nos encargamos de las gestiones de luz y gas de tus comunidades. Sin cortes, sin permanencia, un solo interlocutor.">
+    <meta name="description" content="Especialistas en luz y gas para administradores de fincas y comunidades de propietarios. Revisión gratuita sin compromiso, sin permanencia y un solo interlocutor.">
 
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="canonical" href="https://fincas.megaenergia.es/">
@@ -233,15 +233,18 @@
       "email": "fincas@megaenergia.es",
       "telephone": "+34623723217",
       "description": "Gestión energética integral de luz y gas para administradores de fincas y comunidades de propietarios.",
+      "legalName": "ENERGIA LIBRE COMERCIALIZADORA, S.L.U.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Calle Energía 10",
-        "postalCode": "08915",
-        "addressLocality": "Badalona",
-        "addressRegion": "Barcelona",
+        "streetAddress": "Avenida Diego Martínez Barrio 10, 2ª Planta, Módulo 2.1",
+        "postalCode": "41013",
+        "addressLocality": "Sevilla",
+        "addressRegion": "Sevilla",
         "addressCountry": "ES"
       },
-      "areaServed": { "@type": "Country", "name": "España" }
+      "areaServed": { "@type": "Country", "name": "España" },
+      "parentOrganization": { "@type": "Organization", "name": "Mega Energía", "url": "https://megaenergia.es/" },
+      "sameAs": [ "https://megaenergia.es/" ]
     },
     {
       "@type": "WebSite",
@@ -252,6 +255,17 @@
       "publisher": { "@id": "https://fincas.megaenergia.es/#organization" }
     },
     {
+      "@type": "Service",
+      "@id": "https://fincas.megaenergia.es/#service",
+      "serviceType": "Gestión energética integral para administradores de fincas",
+      "name": "Gestión de luz y gas para comunidades de propietarios",
+      "provider": { "@id": "https://fincas.megaenergia.es/#organization" },
+      "areaServed": { "@type": "Country", "name": "España" },
+      "audience": { "@type": "Audience", "audienceType": "Administradores de fincas y comunidades de propietarios" },
+      "description": "Revisión y optimización de contratos, tarifas y potencias; altas, bajas y cambios de titular; energía reactiva y autoconsumo colectivo, con un único interlocutor para toda la cartera de comunidades.",
+      "url": "https://fincas.megaenergia.es/"
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://fincas.megaenergia.es/#faq",
       "mainEntity": [
@@ -260,7 +274,13 @@
         { "@type": "Question", "name": "¿Y si algo sale mal? ¿Quién responde?", "acceptedAnswer": { "@type": "Answer", "text": "Nosotros. Te acompañamos en todo el proceso y gestionamos cualquier incidencia. No desaparecemos después de la venta: el acompañamiento continuo es lo que nos diferencia." } },
         { "@type": "Question", "name": "¿Puedo decidir en qué comunidades aplicar cambios?", "acceptedAnswer": { "@type": "Answer", "text": "Siempre. Tú decides dónde, cuándo y qué se cambia. Nosotros proponemos, tú apruebas. No hacemos ningún cambio sin tu consentimiento." } },
         { "@type": "Question", "name": "¿Hay compromiso de permanencia?", "acceptedAnswer": { "@type": "Answer", "text": "Puedes empezar con una revisión sin compromiso. Si no ves mejoras claras, no hacemos cambios. Sin letra pequeña." } },
-        { "@type": "Question", "name": "¿Trabajáis específicamente con administradores de fincas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Disponemos de un departamento especializado y diseñado para despachos de administración de fincas y carteras de comunidades. Entendemos tu día a día y nos ocupamos de absolutamente todo durante el proceso." } }
+        { "@type": "Question", "name": "¿Trabajáis específicamente con administradores de fincas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Disponemos de un departamento especializado y diseñado para despachos de administración de fincas y carteras de comunidades. Entendemos tu día a día y nos ocupamos de absolutamente todo durante el proceso." } },
+        { "@type": "Question", "name": "¿Cuánto tarda en hacerse efectivo el cambio de comercializadora en una comunidad?", "acceptedAnswer": { "@type": "Answer", "text": "El cambio es un trámite administrativo regulado. Preparamos la documentación en 24-48 h y se hace efectivo en el siguiente ciclo de lectura del suministro, normalmente entre 2 y 3 semanas. La comunidad no tiene que hacer nada durante el proceso." } },
+        { "@type": "Question", "name": "¿Quién lee el contador y quién responde ante un corte o avería?", "acceptedAnswer": { "@type": "Answer", "text": "El contador y la red siguen siendo de la distribuidora de tu zona, no cambian con la comercializadora. Ante un corte o avería llamas a la distribuidora (su teléfono aparece en la factura); nosotros te ayudamos a identificarla y a gestionar la incidencia." } },
+        { "@type": "Question", "name": "¿Hay que cambiar algo en la instalación o en el contador para cambiar de comercializadora?", "acceptedAnswer": { "@type": "Answer", "text": "No. Cambiar de comercializadora no exige tocar la instalación ni el contador de la comunidad. Solo cambia la empresa que te factura la energía." } },
+        { "@type": "Question", "name": "¿Qué pasa con el suministro si la comercializadora deja de operar?", "acceptedAnswer": { "@type": "Answer", "text": "El suministro nunca se corta: pasa automáticamente a una comercializadora de referencia designada por regulación. Es un mecanismo de protección del consumidor." } },
+        { "@type": "Question", "name": "¿Podéis dar de alta un suministro nuevo (local comunitario, garaje, obra)?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Gestionamos altas nuevas de suministro para zonas comunes, garajes o locales de la comunidad, con el asesoramiento de potencia y tarifa incluido." } },
+        { "@type": "Question", "name": "¿Se puede ajustar la potencia o cambiar la tarifa de las zonas comunes?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. En la revisión analizamos la potencia contratada y la tarifa de cada suministro común (ascensor, alumbrado, garaje) y proponemos el ajuste que evita excesos de potencia y penalizaciones." } }
       ]
     }
   ]
@@ -286,11 +306,17 @@
                 <a href="#contacto" class="text-mega-teal font-semibold hover:text-mega-navy transition-colors">Hablemos</a>
             </div>
 
-            <div class="hidden md:block">
+            <div class="hidden md:flex items-center gap-5">
+                <a href="tel:+34623723217" class="inline-flex items-center gap-2 text-mega-navy font-display font-semibold hover:text-mega-teal transition-colors">
+                    <i class="ph-fill ph-phone-call text-mega-teal"></i> 623 72 32 17
+                </a>
                 <a href="#contacto" class="px-6 py-2.5 rounded-lg font-display font-semibold text-white bg-mega-navy hover:bg-mega-navyLight transition-colors shadow-md">Revisión gratuita</a>
             </div>
 
             <div class="flex md:hidden items-center gap-2">
+                <a href="tel:+34623723217" aria-label="Llamar al 623 72 32 17" class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-mega-tealLight text-mega-teal">
+                    <i class="ph-fill ph-phone-call text-xl"></i>
+                </a>
                 <a href="#contacto" class="px-4 py-2 rounded-lg font-display font-semibold text-white bg-mega-navy hover:bg-mega-navyLight transition-colors shadow-md text-sm">Revisión gratuita</a>
                 <button id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu" class="text-mega-navy text-2xl p-2 -mr-2 cursor-pointer">
                     <i class="ph ph-list" id="navIcon"></i>
@@ -324,7 +350,7 @@
                     Dedicas más tiempo a las facturas de luz y gas<br class="hidden lg:block"> de tus comunidades del que nadie sospecha
                 </p>
                 <h1 class="h1-mega mb-3 text-balance">
-                    <span class="block text-xl lg:text-2xl font-bold text-mega-navy/90 mb-2 leading-snug">Gestión energética para administradores de fincas</span>
+                    <span class="block text-xl lg:text-2xl font-bold text-mega-navy/90 mb-2 leading-snug">Gestión de luz y gas para administradores de fincas</span>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-mega-amber to-[#FFCA64]">Y nadie te lo agradece</span>
                 </h1>
                 <p class="text-base lg:text-lg text-slate-500 mb-1 max-w-lg">
@@ -364,8 +390,8 @@
                             <i class="ph-fill ph-trend-down"></i>
                         </div>
                         <div>
-                            <p class="text-xs text-slate-400 font-medium">Ahorro conseguido</p>
-                            <p class="font-display font-bold text-mega-navy text-lg">-32.4%</p>
+                            <p class="text-xs text-slate-400 font-medium">Tarifas</p>
+                            <p class="font-display font-bold text-mega-navy text-lg">En revisión</p>
                         </div>
                     </div>
 
@@ -458,7 +484,8 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16 reveal">
                 <span class="text-mega-teal font-bold tracking-widest uppercase text-sm mb-2 block">Qué hacemos</span>
-                <h2 class="h2-mega mb-4">No somos una comercializadora más. Somos tu equipo de gestión energética.</h2>
+                <h2 class="h2-mega mb-4">No somos una comercializadora más: somos la comercializadora especializada en administradores de fincas.</h2>
+                <p class="text-lg text-slate-500">Gestionamos la luz y el gas de tus comunidades de propietarios de principio a fin: tú tienes un solo interlocutor y nosotros el trabajo.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -491,6 +518,55 @@
                             Un interlocutor que conoce tus comunidades. Que responde cuando llamas. Que sigue ahí después del cambio, no solo antes.
                         </p>
                     </div>
+                </div>
+            </div>
+
+            <!-- Servicios especializados: enlaces a las páginas de servicio -->
+            <div class="mt-16 reveal">
+                <h3 class="h3-mega text-center mb-8">Servicios que gestionamos por ti</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <a href="/servicios/cambio-de-titularidad-comunidades/" class="group flex items-start gap-4 p-6 rounded-2xl bg-mega-surface border border-slate-100 hover:border-mega-teal/50 hover:shadow-soft transition-all">
+                        <i class="ph-fill ph-identification-card text-3xl text-mega-teal flex-shrink-0"></i>
+                        <div>
+                            <p class="font-display font-semibold text-mega-navy group-hover:text-mega-teal transition-colors">Cambio de titularidad</p>
+                            <p class="text-slate-500 text-sm mt-1">Altas, bajas y cambios de titular sin papeleo para el administrador.</p>
+                        </div>
+                    </a>
+                    <a href="/servicios/energia-reactiva-comunidades/" class="group flex items-start gap-4 p-6 rounded-2xl bg-mega-surface border border-slate-100 hover:border-mega-teal/50 hover:shadow-soft transition-all">
+                        <i class="ph-fill ph-lightning text-3xl text-mega-teal flex-shrink-0"></i>
+                        <div>
+                            <p class="font-display font-semibold text-mega-navy group-hover:text-mega-teal transition-colors">Energía reactiva</p>
+                            <p class="text-slate-500 text-sm mt-1">Detectamos y corregimos la penalización por reactiva en zonas comunes.</p>
+                        </div>
+                    </a>
+                    <a href="/servicios/cambiar-comercializadora-comunidades/" class="group flex items-start gap-4 p-6 rounded-2xl bg-mega-surface border border-slate-100 hover:border-mega-teal/50 hover:shadow-soft transition-all">
+                        <i class="ph-fill ph-swap text-3xl text-mega-teal flex-shrink-0"></i>
+                        <div>
+                            <p class="font-display font-semibold text-mega-navy group-hover:text-mega-teal transition-colors">Cambiar de comercializadora</p>
+                            <p class="text-slate-500 text-sm mt-1">Comparamos y cambiamos la comercializadora sin cortes ni permanencia.</p>
+                        </div>
+                    </a>
+                    <a href="/servicios/autoconsumo-colectivo-comunidades/" class="group flex items-start gap-4 p-6 rounded-2xl bg-mega-surface border border-slate-100 hover:border-mega-teal/50 hover:shadow-soft transition-all">
+                        <i class="ph-fill ph-solar-panel text-3xl text-mega-teal flex-shrink-0"></i>
+                        <div>
+                            <p class="font-display font-semibold text-mega-navy group-hover:text-mega-teal transition-colors">Autoconsumo colectivo</p>
+                            <p class="text-slate-500 text-sm mt-1">Estudiamos y coordinamos el autoconsumo colectivo de la comunidad.</p>
+                        </div>
+                    </a>
+                    <a href="/servicios/optimizacion-potencia-comunidades/" class="group flex items-start gap-4 p-6 rounded-2xl bg-mega-surface border border-slate-100 hover:border-mega-teal/50 hover:shadow-soft transition-all">
+                        <i class="ph-fill ph-gauge text-3xl text-mega-teal flex-shrink-0"></i>
+                        <div>
+                            <p class="font-display font-semibold text-mega-navy group-hover:text-mega-teal transition-colors">Optimización de potencia</p>
+                            <p class="text-slate-500 text-sm mt-1">Ajustamos potencia y tarifa de cada suministro para dejar de pagar de más.</p>
+                        </div>
+                    </a>
+                    <a href="/servicios/agrupacion-puntos-suministro/" class="group flex items-start gap-4 p-6 rounded-2xl bg-mega-surface border border-slate-100 hover:border-mega-teal/50 hover:shadow-soft transition-all">
+                        <i class="ph-fill ph-buildings text-3xl text-mega-teal flex-shrink-0"></i>
+                        <div>
+                            <p class="font-display font-semibold text-mega-navy group-hover:text-mega-teal transition-colors">Agrupación de suministros</p>
+                            <p class="text-slate-500 text-sm mt-1">Unificamos los puntos de suministro de toda tu cartera en una gestión.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -549,7 +625,7 @@
             <div class="flex flex-col lg:flex-row items-center gap-16">
                 <div class="w-full lg:w-1/2 reveal">
                     <span class="text-mega-teal font-bold tracking-widest uppercase text-sm mb-2 block">Qué incluye</span>
-                    <h2 class="h2-mega mb-8">Gestión energética integral para tu cartera de comunidades</h2>
+                    <h2 class="h2-mega mb-8">Gestión integral de luz y gas para tus comunidades de propietarios</h2>
 
                     <div class="space-y-6">
                         <div class="flex gap-4 items-start">
@@ -586,6 +662,34 @@
                             </div>
                             <p class="text-slate-600 text-lg">Seguimiento continuo y acompañamiento post-cambio</p>
                         </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-mega-tealLight flex-shrink-0 flex items-center justify-center text-mega-teal">
+                                <i class="ph-bold ph-check"></i>
+                            </div>
+                            <p class="text-slate-600 text-lg">Optimización de la potencia contratada de cada comunidad</p>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-mega-tealLight flex-shrink-0 flex items-center justify-center text-mega-teal">
+                                <i class="ph-bold ph-check"></i>
+                            </div>
+                            <p class="text-slate-600 text-lg">Revisión de <a href="blog/energia-reactiva-comunidades-penalizacion.html" class="text-mega-teal underline">energía reactiva</a> para evitar penalizaciones en factura</p>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-mega-tealLight flex-shrink-0 flex items-center justify-center text-mega-teal">
+                                <i class="ph-bold ph-check"></i>
+                            </div>
+                            <p class="text-slate-600 text-lg">Estudio de <a href="blog/autoconsumo-colectivo-comunidades-guia-administrador.html" class="text-mega-teal underline">autoconsumo colectivo</a> para la comunidad</p>
+                        </div>
+
+                        <div class="flex gap-4 items-start">
+                            <div class="mt-1 w-8 h-8 rounded-full bg-mega-tealLight flex-shrink-0 flex items-center justify-center text-mega-teal">
+                                <i class="ph-bold ph-check"></i>
+                            </div>
+                            <p class="text-slate-600 text-lg">Agrupación de los puntos de suministro de toda tu cartera en una gestión unificada</p>
+                        </div>
                     </div>
                 </div>
 
@@ -612,8 +716,8 @@
                                     </div>
                                 </div>
                                 <div class="text-right">
-                                    <p class="font-bold text-mega-amber">-15% Ahorro</p>
-                                    <p class="text-xs text-green-500">Optimizado</p>
+                                    <p class="font-bold text-mega-amber">Tarifa optimizada</p>
+                                    <p class="text-xs text-green-500">Ejemplo</p>
                                 </div>
                             </div>
 
@@ -725,6 +829,78 @@
                         Sí. Disponemos de un departamento especializado y diseñado para despachos de administración de fincas y carteras de comunidades. Entendemos tu día a día y nos ocupamos de absolutamente todo durante el proceso.
                     </div>
                 </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm [&_summary::-webkit-details-marker]:hidden open:border-mega-teal/50 transition-colors">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-display font-semibold text-lg text-mega-navy">
+                        ¿Cuánto tarda en hacerse efectivo el cambio de comercializadora en una comunidad?
+                        <span class="transition duration-300 group-open:-rotate-180 text-mega-teal">
+                            <i class="ph-bold ph-caret-down text-xl"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+                        El cambio es un trámite administrativo regulado. Preparamos la documentación en 24-48 h y se hace efectivo en el siguiente ciclo de lectura del suministro, normalmente entre 2 y 3 semanas. La comunidad no tiene que hacer nada durante el proceso.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm [&_summary::-webkit-details-marker]:hidden open:border-mega-teal/50 transition-colors">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-display font-semibold text-lg text-mega-navy">
+                        ¿Quién lee el contador y quién responde ante un corte o avería?
+                        <span class="transition duration-300 group-open:-rotate-180 text-mega-teal">
+                            <i class="ph-bold ph-caret-down text-xl"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+                        El contador y la red siguen siendo de la distribuidora de tu zona, no cambian con la comercializadora. Ante un corte o avería llamas a la distribuidora (su teléfono aparece en la factura); nosotros te ayudamos a identificarla y a gestionar la incidencia.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm [&_summary::-webkit-details-marker]:hidden open:border-mega-teal/50 transition-colors">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-display font-semibold text-lg text-mega-navy">
+                        ¿Hay que cambiar algo en la instalación o en el contador?
+                        <span class="transition duration-300 group-open:-rotate-180 text-mega-teal">
+                            <i class="ph-bold ph-caret-down text-xl"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+                        No. Cambiar de comercializadora no exige tocar la instalación ni el contador de la comunidad. Solo cambia la empresa que te factura la energía.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm [&_summary::-webkit-details-marker]:hidden open:border-mega-teal/50 transition-colors">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-display font-semibold text-lg text-mega-navy">
+                        ¿Qué pasa con el suministro si la comercializadora deja de operar?
+                        <span class="transition duration-300 group-open:-rotate-180 text-mega-teal">
+                            <i class="ph-bold ph-caret-down text-xl"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+                        El suministro nunca se corta: pasa automáticamente a una comercializadora de referencia designada por regulación. Es un mecanismo de protección del consumidor.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm [&_summary::-webkit-details-marker]:hidden open:border-mega-teal/50 transition-colors">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-display font-semibold text-lg text-mega-navy">
+                        ¿Podéis dar de alta un suministro nuevo (local comunitario, garaje, obra)?
+                        <span class="transition duration-300 group-open:-rotate-180 text-mega-teal">
+                            <i class="ph-bold ph-caret-down text-xl"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+                        Sí. Gestionamos altas nuevas de suministro para zonas comunes, garajes o locales de la comunidad, con el asesoramiento de potencia y tarifa incluido.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-2xl border border-slate-200 shadow-sm [&_summary::-webkit-details-marker]:hidden open:border-mega-teal/50 transition-colors">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 font-display font-semibold text-lg text-mega-navy">
+                        ¿Se puede ajustar la potencia o cambiar la tarifa de las zonas comunes?
+                        <span class="transition duration-300 group-open:-rotate-180 text-mega-teal">
+                            <i class="ph-bold ph-caret-down text-xl"></i>
+                        </span>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-500 leading-relaxed">
+                        Sí. En la revisión analizamos la potencia contratada y la tarifa de cada suministro común (ascensor, alumbrado, garaje) y proponemos el ajuste que evita excesos de potencia y penalizaciones.
+                    </div>
+                </details>
             </div>
         </div>
     </section>
@@ -735,7 +911,7 @@
             <div class="bg-mega-navy rounded-2xl lg:rounded-[3rem] overflow-hidden shadow-[0_30px_60px_-15px_rgba(26,26,46,0.3)] flex flex-col lg:flex-row">
 
                 <div class="w-full lg:w-5/12 p-8 lg:p-16 relative flex flex-col justify-between">
-                    <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+                    <div class="absolute top-0 left-0 w-full h-full opacity-10" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 28px 28px;"></div>
 
                     <div class="relative z-10">
                         <h2 class="h2-mega text-white mb-6">Delega la gestión hoy mismo.</h2>
@@ -769,13 +945,13 @@
                             <div class="h-14 px-3 bg-white rounded-lg flex items-center">
                                 <picture>
                                     <source srcset="images/caf-cadiz.webp" type="image/webp">
-                                    <img src="images/CAF%20CADIZ.jpeg" alt="Colegio de Administradores de Fincas de Cádiz" class="h-10 w-auto object-contain" loading="lazy">
+                                    <img src="images/caf-cadiz.jpeg" alt="Colegio de Administradores de Fincas de Cádiz" class="h-10 w-auto object-contain" loading="lazy">
                                 </picture>
                             </div>
                             <div class="h-14 px-3 bg-white rounded-lg flex items-center">
                                 <picture>
                                     <source srcset="images/caf-malaga.webp" type="image/webp">
-                                    <img src="images/CAF%20M%C3%A1laga.jpeg" alt="Colegio de Administradores de Fincas de Málaga" class="h-10 w-auto object-contain" loading="lazy">
+                                    <img src="images/caf-malaga.jpeg" alt="Colegio de Administradores de Fincas de Málaga" class="h-10 w-auto object-contain" loading="lazy">
                                 </picture>
                             </div>
                         </div>
@@ -798,7 +974,7 @@
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-bold text-mega-navy mb-2 ml-1">Teléfono *</label>
-                                <input type="tel" name="telefono" placeholder="600 000 000" class="input-floating" required autocomplete="tel">
+                                <input type="tel" name="telefono" placeholder="Ej: 612 345 678" class="input-floating" required autocomplete="tel">
                             </div>
                             <div>
                                 <label class="block text-sm font-bold text-mega-navy mb-2 ml-1">Email *</label>
@@ -807,14 +983,14 @@
                         </div>
 
                         <div>
-                            <label class="block text-sm font-bold text-mega-navy mb-2 ml-1">Provincia *</label>
-                            <input type="text" name="provincia" placeholder="Ej: Madrid, Barcelona..." class="input-floating" required>
+                            <label class="block text-sm font-bold text-mega-navy mb-2 ml-1">Provincia</label>
+                            <input type="text" name="provincia" placeholder="Ej: Madrid, Barcelona... (opcional)" class="input-floating">
                         </div>
 
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-sm font-bold text-mega-navy mb-2 ml-1">¿Qué te interesa? *</label>
-                                <select name="delegar" class="input-floating" required>
+                                <label class="block text-sm font-bold text-mega-navy mb-2 ml-1">¿Qué te interesa?</label>
+                                <select name="delegar" class="input-floating">
                                     <option value="">Selecciona una opción</option>
                                     <option value="revision">Revisión de contratos y tarifas</option>
                                     <option value="tramites">Gestión de trámites (altas, bajas, cambios)</option>
@@ -883,15 +1059,17 @@
                     <div class="flex items-center gap-2 mb-6">
                         <img src="images/logo_megaenergia.png" alt="Mega Energía" class="h-8 w-auto brightness-0 invert">
                     </div>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Expertos en auditoría, optimización y gestión energética exclusiva para Administradores de Fincas en España.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Expertos en auditoría, optimización y gestión energética exclusiva para Administradores de Fincas en España.</p>
+                    <p class="text-slate-500 text-xs">Parte del grupo <a href="https://megaenergia.es/" class="hover:text-mega-amber underline">Mega Energía</a></p>
                 </div>
 
                 <div>
                     <h3 class="text-white font-bold mb-6 font-display">Servicios</h3>
                     <ul class="space-y-4 text-sm text-slate-400">
-                        <li><a href="#servicios" class="hover:text-mega-amber transition-colors">Revisión y detección</a></li>
-                        <li><a href="#servicios" class="hover:text-mega-amber transition-colors">Gestión integral</a></li>
-                        <li><a href="#servicios" class="hover:text-mega-amber transition-colors">Acompañamiento continuo</a></li>
+                        <li><a href="/servicios/cambio-de-titularidad-comunidades/" class="hover:text-mega-amber transition-colors">Cambio de titularidad</a></li>
+                        <li><a href="/servicios/energia-reactiva-comunidades/" class="hover:text-mega-amber transition-colors">Energía reactiva</a></li>
+                        <li><a href="/servicios/cambiar-comercializadora-comunidades/" class="hover:text-mega-amber transition-colors">Cambiar de comercializadora</a></li>
+                        <li><a href="/servicios/autoconsumo-colectivo-comunidades/" class="hover:text-mega-amber transition-colors">Autoconsumo colectivo</a></li>
                     </ul>
                 </div>
 
@@ -909,8 +1087,9 @@
                     <ul class="space-y-4 text-sm text-slate-400">
                         <li class="flex items-start gap-3">
                             <i class="ph-fill ph-map-pin mt-1 text-mega-teal"></i>
-                            <span>Calle Energía 10<br>08915, Badalona, Barcelona</span>
+                            <span>Avenida Diego Martínez Barrio, 10 – 2ª Planta, Módulo 2.1<br>41013 Sevilla</span>
                         </li>
+                        <li class="text-slate-500 text-xs">ENERGIA LIBRE COMERCIALIZADORA, S.L.U. · NIF B-90137316</li>
                     </ul>
                 </div>
             </div>
